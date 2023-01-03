@@ -1,0 +1,3815 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPlayer",
+        "printedName": "MediaPlayer",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Gesturedeck",
+        "printedName": "Gesturedeck",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tapAction",
+            "printedName": "tapAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS11GesturedeckC9tapActionyycSgvp",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC9tapActionyycSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC9tapActionyycSgvg",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC9tapActionyycSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC9tapActionyycSgvs",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC9tapActionyycSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC9tapActionyycSgvM",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC9tapActionyycSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "swipeLeftAction",
+            "printedName": "swipeLeftAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS11GesturedeckC15swipeLeftActionyycSgvp",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC15swipeLeftActionyycSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC15swipeLeftActionyycSgvg",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC15swipeLeftActionyycSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC15swipeLeftActionyycSgvs",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC15swipeLeftActionyycSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC15swipeLeftActionyycSgvM",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC15swipeLeftActionyycSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "swipeRightAction",
+            "printedName": "swipeRightAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS11GesturedeckC16swipeRightActionyycSgvp",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC16swipeRightActionyycSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC16swipeRightActionyycSgvg",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC16swipeRightActionyycSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC16swipeRightActionyycSgvs",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC16swipeRightActionyycSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC16swipeRightActionyycSgvM",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC16swipeRightActionyycSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "panAction",
+            "printedName": "panAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIPanGestureRecognizer) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIPanGestureRecognizer) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIPanGestureRecognizer",
+                        "printedName": "UIKit.UIPanGestureRecognizer",
+                        "usr": "c:objc(cs)UIPanGestureRecognizer"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS11GesturedeckC9panActionySo22UIPanGestureRecognizerCcSgvp",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC9panActionySo22UIPanGestureRecognizerCcSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIPanGestureRecognizer) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIPanGestureRecognizer) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIPanGestureRecognizer",
+                            "printedName": "UIKit.UIPanGestureRecognizer",
+                            "usr": "c:objc(cs)UIPanGestureRecognizer"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC9panActionySo22UIPanGestureRecognizerCcSgvg",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC9panActionySo22UIPanGestureRecognizerCcSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UIPanGestureRecognizer) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIPanGestureRecognizer) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIPanGestureRecognizer",
+                            "printedName": "UIKit.UIPanGestureRecognizer",
+                            "usr": "c:objc(cs)UIPanGestureRecognizer"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC9panActionySo22UIPanGestureRecognizerCcSgvs",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC9panActionySo22UIPanGestureRecognizerCcSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC9panActionySo22UIPanGestureRecognizerCcSgvM",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC9panActionySo22UIPanGestureRecognizerCcSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "longPressAction",
+            "printedName": "longPressAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UILongPressGestureRecognizer) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UILongPressGestureRecognizer) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UILongPressGestureRecognizer",
+                        "printedName": "UIKit.UILongPressGestureRecognizer",
+                        "usr": "c:objc(cs)UILongPressGestureRecognizer"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS11GesturedeckC15longPressActionySo06UILongE17GestureRecognizerCcSgvp",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC15longPressActionySo06UILongE17GestureRecognizerCcSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UILongPressGestureRecognizer) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UILongPressGestureRecognizer) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UILongPressGestureRecognizer",
+                            "printedName": "UIKit.UILongPressGestureRecognizer",
+                            "usr": "c:objc(cs)UILongPressGestureRecognizer"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC15longPressActionySo06UILongE17GestureRecognizerCcSgvg",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC15longPressActionySo06UILongE17GestureRecognizerCcSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UIKit.UILongPressGestureRecognizer) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UILongPressGestureRecognizer) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UILongPressGestureRecognizer",
+                            "printedName": "UIKit.UILongPressGestureRecognizer",
+                            "usr": "c:objc(cs)UILongPressGestureRecognizer"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC15longPressActionySo06UILongE17GestureRecognizerCcSgvs",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC15longPressActionySo06UILongE17GestureRecognizerCcSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC15longPressActionySo06UILongE17GestureRecognizerCcSgvM",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC15longPressActionySo06UILongE17GestureRecognizerCcSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(on:tapAction:swipeLeftAction:swipeRightAction:panAction:longPressAction:activationKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Gesturedeck",
+                "printedName": "GesturedeckiOS.Gesturedeck",
+                "usr": "c:@M@GesturedeckiOS@objc(cs)Gesturedeck"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIPanGestureRecognizer) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIPanGestureRecognizer) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIPanGestureRecognizer",
+                        "printedName": "UIKit.UIPanGestureRecognizer",
+                        "usr": "c:objc(cs)UIPanGestureRecognizer"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UILongPressGestureRecognizer) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UILongPressGestureRecognizer) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UILongPressGestureRecognizer",
+                        "printedName": "UIKit.UILongPressGestureRecognizer",
+                        "usr": "c:objc(cs)UILongPressGestureRecognizer"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14GesturedeckiOS11GesturedeckC2on9tapAction09swipeLeftF00g5RightF003panF009longPressF013activationKeyACSo16UIViewControllerCSg_yycSgA2NySo22UIPanGestureRecognizerCcSgySo06UILonglrS0CcSgSSSgtcfc",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC2on9tapAction09swipeLeftF00g5RightF003panF009longPressF013activationKeyACSo16UIViewControllerCSg_yycSgA2NySo22UIPanGestureRecognizerCcSgySo06UILonglrS0CcSgSSSgtcfc",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14GesturedeckiOS11GesturedeckC5startyyF",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC5startyyF",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14GesturedeckiOS11GesturedeckC4stopyyF",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC4stopyyF",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isActive",
+            "printedName": "isActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS11GesturedeckC8isActiveSbvp",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC8isActiveSbvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS11GesturedeckC8isActiveSbvg",
+                "mangledName": "$s14GesturedeckiOS11GesturedeckC8isActiveSbvg",
+                "moduleName": "GesturedeckiOS",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Gesturedeck",
+                "printedName": "GesturedeckiOS.Gesturedeck",
+                "usr": "c:@M@GesturedeckiOS@objc(cs)Gesturedeck"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GesturedeckiOS@objc(cs)Gesturedeck(im)init",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckCACycfc",
+            "moduleName": "GesturedeckiOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "gestureRecognizer",
+            "printedName": "gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIGestureRecognizer",
+                "printedName": "UIKit.UIGestureRecognizer",
+                "usr": "c:objc(cs)UIGestureRecognizer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIGestureRecognizer",
+                "printedName": "UIKit.UIGestureRecognizer",
+                "usr": "c:objc(cs)UIGestureRecognizer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GesturedeckiOS@objc(cs)Gesturedeck(im)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC17gestureRecognizer_33shouldRecognizeSimultaneouslyWithSbSo09UIGestureE0C_AGtF",
+            "moduleName": "GesturedeckiOS",
+            "objc_name": "gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gestureRecognizerShouldBegin",
+            "printedName": "gestureRecognizerShouldBegin(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIGestureRecognizer",
+                "printedName": "UIKit.UIGestureRecognizer",
+                "usr": "c:objc(cs)UIGestureRecognizer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@GesturedeckiOS@objc(cs)Gesturedeck(im)gestureRecognizerShouldBegin:",
+            "mangledName": "$s14GesturedeckiOS11GesturedeckC28gestureRecognizerShouldBeginySbSo09UIGestureE0CF",
+            "moduleName": "GesturedeckiOS",
+            "objc_name": "gestureRecognizerShouldBegin:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GesturedeckiOS@objc(cs)Gesturedeck",
+        "mangledName": "$s14GesturedeckiOS11GesturedeckC",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AudioToolbox",
+        "printedName": "AudioToolbox",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreHaptics",
+        "printedName": "CoreHaptics",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GesturedeckMediaOverlay",
+        "printedName": "GesturedeckMediaOverlay",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tintColor",
+            "printedName": "tintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV9tintColorSo7UIColorCSgvp",
+            "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV9tintColorSo7UIColorCSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV9tintColorSo7UIColorCSgvg",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV9tintColorSo7UIColorCSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV9tintColorSo7UIColorCSgvs",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV9tintColorSo7UIColorCSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV9tintColorSo7UIColorCSgvM",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV9tintColorSo7UIColorCSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "topIcon",
+            "printedName": "topIcon",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV7topIconSo7UIImageCSgvp",
+            "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV7topIconSo7UIImageCSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV7topIconSo7UIImageCSgvg",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV7topIconSo7UIImageCSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV7topIconSo7UIImageCSgvs",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV7topIconSo7UIImageCSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV7topIconSo7UIImageCSgvM",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV7topIconSo7UIImageCSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iconTap",
+            "printedName": "iconTap",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV7iconTapSo7UIImageCSgvp",
+            "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV7iconTapSo7UIImageCSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV7iconTapSo7UIImageCSgvg",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV7iconTapSo7UIImageCSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV7iconTapSo7UIImageCSgvs",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV7iconTapSo7UIImageCSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV7iconTapSo7UIImageCSgvM",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV7iconTapSo7UIImageCSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iconTapToggled",
+            "printedName": "iconTapToggled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV14iconTapToggledSo7UIImageCSgvp",
+            "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV14iconTapToggledSo7UIImageCSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV14iconTapToggledSo7UIImageCSgvg",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV14iconTapToggledSo7UIImageCSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV14iconTapToggledSo7UIImageCSgvs",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV14iconTapToggledSo7UIImageCSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV14iconTapToggledSo7UIImageCSgvM",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV14iconTapToggledSo7UIImageCSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iconSwipeLeft",
+            "printedName": "iconSwipeLeft",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV13iconSwipeLeftSo7UIImageCSgvp",
+            "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV13iconSwipeLeftSo7UIImageCSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV13iconSwipeLeftSo7UIImageCSgvg",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV13iconSwipeLeftSo7UIImageCSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV13iconSwipeLeftSo7UIImageCSgvs",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV13iconSwipeLeftSo7UIImageCSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV13iconSwipeLeftSo7UIImageCSgvM",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV13iconSwipeLeftSo7UIImageCSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iconSwipeRight",
+            "printedName": "iconSwipeRight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV14iconSwipeRightSo7UIImageCSgvp",
+            "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV14iconSwipeRightSo7UIImageCSgvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV14iconSwipeRightSo7UIImageCSgvg",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV14iconSwipeRightSo7UIImageCSgvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV14iconSwipeRightSo7UIImageCSgvs",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV14iconSwipeRightSo7UIImageCSgvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV14iconSwipeRightSo7UIImageCSgvM",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV14iconSwipeRightSo7UIImageCSgvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reverseHorizontalSwipes",
+            "printedName": "reverseHorizontalSwipes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV23reverseHorizontalSwipesSbvp",
+            "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV23reverseHorizontalSwipesSbvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV23reverseHorizontalSwipesSbvg",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV23reverseHorizontalSwipesSbvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV23reverseHorizontalSwipesSbvs",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV23reverseHorizontalSwipesSbvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV23reverseHorizontalSwipesSbvM",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV23reverseHorizontalSwipesSbvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "centerIconShowsOuterRing",
+            "printedName": "centerIconShowsOuterRing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV24centerIconShowsOuterRingSbvp",
+            "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV24centerIconShowsOuterRingSbvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV24centerIconShowsOuterRingSbvg",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV24centerIconShowsOuterRingSbvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV24centerIconShowsOuterRingSbvs",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV24centerIconShowsOuterRingSbvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV24centerIconShowsOuterRingSbvM",
+                "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV24centerIconShowsOuterRingSbvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(tintColor:topIcon:iconTap:iconTapToggled:iconSwipeLeft:iconSwipeRight:reverseHorizontalSwipes:centerIconShowsOuterRing:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GesturedeckMediaOverlay",
+                "printedName": "GesturedeckiOS.GesturedeckMediaOverlay",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV9tintColor7topIcon7iconTap0jK7Toggled0J9SwipeLeft0jM5Right23reverseHorizontalSwipes06centerI14ShowsOuterRingACSo7UIColorCSg_So7UIImageCSgA4QS2btcfc",
+            "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV9tintColor7topIcon7iconTap0jK7Toggled0J9SwipeLeft0jM5Right23reverseHorizontalSwipes06centerI14ShowsOuterRingACSo7UIColorCSg_So7UIImageCSgA4QS2btcfc",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV",
+        "mangledName": "$s14GesturedeckiOS23GesturedeckMediaOverlayV",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPlayer",
+        "printedName": "MediaPlayer",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GesturedeckiOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GesturedeckMedia",
+        "printedName": "GesturedeckMedia",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "gesturedeckMediaOverlay",
+            "printedName": "gesturedeckMediaOverlay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GesturedeckMediaOverlay",
+                "printedName": "GesturedeckiOS.GesturedeckMediaOverlay",
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS16GesturedeckMediaC011gesturedeckD7OverlayAA0cdF0Vvp",
+            "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC011gesturedeckD7OverlayAA0cdF0Vvp",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GesturedeckMediaOverlay",
+                    "printedName": "GesturedeckiOS.GesturedeckMediaOverlay",
+                    "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS16GesturedeckMediaC011gesturedeckD7OverlayAA0cdF0Vvg",
+                "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC011gesturedeckD7OverlayAA0cdF0Vvg",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GesturedeckMediaOverlay",
+                    "printedName": "GesturedeckiOS.GesturedeckMediaOverlay",
+                    "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS16GesturedeckMediaC011gesturedeckD7OverlayAA0cdF0Vvs",
+                "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC011gesturedeckD7OverlayAA0cdF0Vvs",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS16GesturedeckMediaC011gesturedeckD7OverlayAA0cdF0VvM",
+                "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC011gesturedeckD7OverlayAA0cdF0VvM",
+                "moduleName": "GesturedeckiOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(on:tapAction:swipeLeftAction:swipeRightAction:panAction:longPressAction:activationKey:gesturedeckMediaOverlay:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GesturedeckMedia",
+                "printedName": "GesturedeckiOS.GesturedeckMedia",
+                "usr": "c:@M@GesturedeckiOS@objc(cs)GesturedeckMedia"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIPanGestureRecognizer) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIPanGestureRecognizer) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIPanGestureRecognizer",
+                        "printedName": "UIKit.UIPanGestureRecognizer",
+                        "usr": "c:objc(cs)UIPanGestureRecognizer"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UILongPressGestureRecognizer) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UILongPressGestureRecognizer) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UILongPressGestureRecognizer",
+                        "printedName": "UIKit.UILongPressGestureRecognizer",
+                        "usr": "c:objc(cs)UILongPressGestureRecognizer"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GesturedeckMediaOverlay",
+                "printedName": "GesturedeckiOS.GesturedeckMediaOverlay",
+                "hasDefaultArg": true,
+                "usr": "s:14GesturedeckiOS23GesturedeckMediaOverlayV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14GesturedeckiOS16GesturedeckMediaC2on9tapAction09swipeLeftG00h5RightG003panG009longPressG013activationKey011gesturedeckD7OverlayACSo16UIViewControllerCSg_yycSgA2OySo22UIPanGestureRecognizerCcSgySo06UILongmuV0CcSgSSSgAA0cdQ0Vtcfc",
+            "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC2on9tapAction09swipeLeftG00h5RightG003panG009longPressG013activationKey011gesturedeckD7OverlayACSo16UIViewControllerCSg_yycSgA2OySo22UIPanGestureRecognizerCcSgySo06UILongmuV0CcSgSSSgAA0cdQ0Vtcfc",
+            "moduleName": "GesturedeckiOS",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14GesturedeckiOS16GesturedeckMediaC5startyyF",
+            "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC5startyyF",
+            "moduleName": "GesturedeckiOS",
+            "overriding": true,
+            "declAttributes": [
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14GesturedeckiOS16GesturedeckMediaC4stopyyF",
+            "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC4stopyyF",
+            "moduleName": "GesturedeckiOS",
+            "overriding": true,
+            "declAttributes": [
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isActive",
+            "printedName": "isActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14GesturedeckiOS16GesturedeckMediaC8isActiveSbvp",
+            "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC8isActiveSbvp",
+            "moduleName": "GesturedeckiOS",
+            "overriding": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14GesturedeckiOS16GesturedeckMediaC8isActiveSbvg",
+                "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC8isActiveSbvg",
+                "moduleName": "GesturedeckiOS",
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(on:tapAction:swipeLeftAction:swipeRightAction:panAction:longPressAction:activationKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GesturedeckMedia",
+                "printedName": "GesturedeckiOS.GesturedeckMedia",
+                "usr": "c:@M@GesturedeckiOS@objc(cs)GesturedeckMedia"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIPanGestureRecognizer) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIPanGestureRecognizer) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIPanGestureRecognizer",
+                        "printedName": "UIKit.UIPanGestureRecognizer",
+                        "usr": "c:objc(cs)UIPanGestureRecognizer"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UILongPressGestureRecognizer) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UILongPressGestureRecognizer) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UILongPressGestureRecognizer",
+                        "printedName": "UIKit.UILongPressGestureRecognizer",
+                        "usr": "c:objc(cs)UILongPressGestureRecognizer"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14GesturedeckiOS16GesturedeckMediaC2on9tapAction09swipeLeftG00h5RightG003panG009longPressG013activationKeyACSo16UIViewControllerCSg_yycSgA2NySo22UIPanGestureRecognizerCcSgySo06UILongmsT0CcSgSSSgtcfc",
+            "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC2on9tapAction09swipeLeftG00h5RightG003panG009longPressG013activationKeyACSo16UIViewControllerCSg_yycSgA2NySo22UIPanGestureRecognizerCcSgySo06UILongmsT0CcSgSSSgtcfc",
+            "moduleName": "GesturedeckiOS",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@GesturedeckiOS@objc(cs)GesturedeckMedia",
+        "mangledName": "$s14GesturedeckiOS16GesturedeckMediaC",
+        "moduleName": "GesturedeckiOS",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@GesturedeckiOS@objc(cs)Gesturedeck",
+        "superclassNames": [
+          "GesturedeckiOS.Gesturedeck",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UIViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 329,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UIViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 908,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewControllerOverlay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 316,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewControllerOverlay.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 30,
+      "value": "\"GestureViewControllerOverlay\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewControllerOverlay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 527,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewControllerOverlay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 700,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewControllerOverlay.swift",
+      "kind": "StringLiteral",
+      "offset": 168,
+      "length": 28,
+      "value": "\"GesturedeckiOS.GestureViewControllerOverlay\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 597,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "StringLiteral",
+      "offset": 2254,
+      "length": 36,
+      "value": "\"⚠️ Failed to start Gesturedeck\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2565,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2703,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "StringLiteral",
+      "offset": 2735,
+      "length": 92,
+      "value": "\"Error: Could not activate Gesturedeck with this key. Gesturedeck is running in trial mode.\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2886,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "StringLiteral",
+      "offset": 2914,
+      "length": 67,
+      "value": "\"No Activation Key provided. Gesturedeck is running in trial mode.\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3413,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3550,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "StringLiteral",
+      "offset": 3762,
+      "length": 13,
+      "value": "\"icon_locked\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4088,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4128,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4308,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4368,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4589,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4656,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4887,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4955,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5124,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5189,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "FloatLiteral",
+      "offset": 5361,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5423,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5483,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "FloatLiteral",
+      "offset": 5677,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5750,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5818,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6918,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6983,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7143,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7208,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 11,
+      "value": "\"GesturedeckiOS.Gesturedeck\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7966,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7998,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Gesturedeck.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8442,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 976,
+      "length": 11,
+      "value": "\"icon_skip\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1079,
+      "length": 12,
+      "value": "\"icon_pause\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1182,
+      "length": 11,
+      "value": "\"icon_play\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1325,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1412,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1857,
+      "length": 23,
+      "value": "\"GestureViewController\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2010,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2552,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2662,
+      "length": 7,
+      "value": "\"%1.1f\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2691,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2696,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2703,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2755,
+      "length": 4,
+      "value": "1.00"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 2844,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 3187,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 3203,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3531,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 3636,
+      "length": 7,
+      "value": "\"%1.1f\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3668,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 3673,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 3680,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3718,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3778,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 3825,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 3887,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3964,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3970,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5762,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5982,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6263,
+      "length": 2,
+      "value": "28"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6274,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6284,
+      "length": 2,
+      "value": "57"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6295,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 6381,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6409,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6483,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6489,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 6638,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6671,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6799,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6805,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 6913,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7100,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7106,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7552,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7888,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 337,
+      "length": 21,
+      "value": "\"GesturedeckiOS.GestureViewController\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GestureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8295,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 787,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 811,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1283,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1692,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "Array",
+      "offset": 1782,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 3213,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 3339,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 3347,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3692,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3914,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 3920,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 4021,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 4029,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 4131,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 4375,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/UniHaptic.swift",
+      "kind": "FloatLiteral",
+      "offset": 4383,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Activation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 590,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Activation.swift",
+      "kind": "StringLiteral",
+      "offset": 1195,
+      "length": 606,
+      "value": "\"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE4Ry9rckVZQkwycGY2Q0FFWVMrMQpnWm1kQ1dWd084Q3ovQThOUTk4QzJ4MWZ1a3I0eDhyUWpWYTdna3FCWG5LWUdST1hCaDhZVlZPWjVaVThqRDFJCmpUWW4zMTgwY0FLNmZWUDNtYTY5c0VYSERGVFpZSzNGb2JRcThmMkVCWmlBemFXNUhmUVQxWjhieDR5bm9IWkEKeWpjRHJjQk8rOG5TUW40WHl6YTJCajBKL0pKdXZ5UXRFbm92Qm13dDNzYkZkS1M5a3JOSGNTaFlaTklPdWhYaQpWdldMU2M4Q3R4UlREVW1ZcEw2TjlvemtaKzB6czhoYWFiLzk5RjNuZmJSZHZOYUNmTUlYbzdIaXErV2ZQY1J2CkZYblFmdHNVZkp6ZFJZNjUyOWNMSFBVR2lTbGZDUTJvOHlWMWJmaUJPdmlsQUdtWCsxVktzbjRyMEswQkVqNGkKdVFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/Activation.swift",
+      "kind": "StringLiteral",
+      "offset": 2022,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/BundleHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 285,
+      "length": 19,
+      "value": "\"GesturedeckBundle\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/BundleHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 8,
+      "value": "\"bundle\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMediaOverlay.swift",
+      "kind": "FloatLiteral",
+      "offset": 532,
+      "length": 4,
+      "value": "28.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMediaOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 539,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMediaOverlay.swift",
+      "kind": "FloatLiteral",
+      "offset": 551,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMediaOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 558,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMediaOverlay.swift",
+      "kind": "FloatLiteral",
+      "offset": 569,
+      "length": 4,
+      "value": "57.0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMediaOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 576,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMediaOverlay.swift",
+      "kind": "FloatLiteral",
+      "offset": 588,
+      "length": 3,
+      "value": "0.9"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMediaOverlay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 819,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMediaOverlay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 867,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "FloatLiteral",
+      "offset": 155,
+      "length": 4,
+      "value": "0.02"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "IntegerLiteral",
+      "offset": 447,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2602,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2827,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3035,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3285,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "StringLiteral",
+      "offset": 4073,
+      "length": 16,
+      "value": "\"MPVolumeSlider\""
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4310,
+      "length": 5,
+      "value": "-1000"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4351,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "FloatLiteral",
+      "offset": 6195,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "FloatLiteral",
+      "offset": 6211,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6675,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7341,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7463,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7469,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/X5\/Dev\/Navideck\/gesturedeck_sdk\/gesturedeck_sdk_ios\/Gesturedeck\/GesturedeckMedia\/GesturedeckMedia.swift",
+      "kind": "StringLiteral",
+      "offset": 174,
+      "length": 16,
+      "value": "\"GesturedeckiOS.GesturedeckMedia\""
+    }
+  ]
+}
