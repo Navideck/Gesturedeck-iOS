@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GesturedeckiOS
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AudioToolbox
 import CoreHaptics
 import Foundation
@@ -9,14 +8,13 @@ import MediaPlayer
 import Swift
 import UIKit
 import _Concurrency
-import _StringProcessing
 @objc public class Gesturedeck : ObjectiveC.NSObject {
   public var tapAction: (() -> Swift.Void)?
   public var swipeLeftAction: (() -> Swift.Void)?
   public var swipeRightAction: (() -> Swift.Void)?
   public var panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)?
   public var longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)?
-  public init(on hostViewController: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = nil, swipeLeftAction: (() -> Swift.Void)? = nil, swipeRightAction: (() -> Swift.Void)? = nil, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, activationKey: Swift.String? = nil)
+  public init(on hostViewController: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = nil, swipeLeftAction: (() -> Swift.Void)? = nil, swipeRightAction: (() -> Swift.Void)? = nil, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, activationKey: Swift.String? = nil, autoStart: Swift.Bool = true)
   public func start()
   public func stop()
   public var isActive: Swift.Bool {
@@ -24,7 +22,7 @@ import _StringProcessing
   }
   @objc deinit
 }
- extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
+extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizerShouldBegin(_ panGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
 }
@@ -41,7 +39,7 @@ public struct GesturedeckMediaOverlay {
 }
 @objc @_Concurrency.MainActor(unsafe) public class GesturedeckMedia : GesturedeckiOS.Gesturedeck {
   @_Concurrency.MainActor(unsafe) public var gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay
-  @_Concurrency.MainActor(unsafe) public init(on: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = nil, swipeLeftAction: (() -> Swift.Void)? = nil, swipeRightAction: (() -> Swift.Void)? = nil, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, activationKey: Swift.String? = nil, gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay = GesturedeckMediaOverlay())
+  @_Concurrency.MainActor(unsafe) public init(on: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = nil, swipeLeftAction: (() -> Swift.Void)? = nil, swipeRightAction: (() -> Swift.Void)? = nil, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, activationKey: Swift.String? = nil, autoStart: Swift.Bool = true, gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay = GesturedeckMediaOverlay())
   override public func start()
   override public func stop()
   override public var isActive: Swift.Bool {

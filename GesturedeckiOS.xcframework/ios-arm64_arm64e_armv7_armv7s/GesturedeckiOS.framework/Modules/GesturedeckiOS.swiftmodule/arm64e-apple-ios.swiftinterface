@@ -1,0 +1,49 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64e-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GesturedeckiOS
+import AudioToolbox
+import CoreHaptics
+import Foundation
+import MediaPlayer
+import Swift
+import UIKit
+import _Concurrency
+@objc public class Gesturedeck : ObjectiveC.NSObject {
+  public var tapAction: (() -> Swift.Void)?
+  public var swipeLeftAction: (() -> Swift.Void)?
+  public var swipeRightAction: (() -> Swift.Void)?
+  public var panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)?
+  public var longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)?
+  public init(on hostViewController: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = nil, swipeLeftAction: (() -> Swift.Void)? = nil, swipeRightAction: (() -> Swift.Void)? = nil, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, activationKey: Swift.String? = nil, autoStart: Swift.Bool = true)
+  public func start()
+  public func stop()
+  public var isActive: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
+extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizerShouldBegin(_ panGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+public struct GesturedeckMediaOverlay {
+  public var tintColor: UIKit.UIColor?
+  public var topIcon: UIKit.UIImage?
+  public var iconTap: UIKit.UIImage?
+  public var iconTapToggled: UIKit.UIImage?
+  public var iconSwipeLeft: UIKit.UIImage?
+  public var iconSwipeRight: UIKit.UIImage?
+  public var reverseHorizontalSwipes: Swift.Bool
+  public var centerIconShowsOuterRing: Swift.Bool
+  public init(tintColor: UIKit.UIColor? = UIColor(red: 28.0 / 255, green: 30.0 / 255, blue: 57.0 / 255, alpha: 0.9), topIcon: UIKit.UIImage? = nil, iconTap: UIKit.UIImage? = nil, iconTapToggled: UIKit.UIImage? = nil, iconSwipeLeft: UIKit.UIImage? = nil, iconSwipeRight: UIKit.UIImage? = nil, reverseHorizontalSwipes: Swift.Bool = false, centerIconShowsOuterRing: Swift.Bool = true)
+}
+@objc @_Concurrency.MainActor(unsafe) public class GesturedeckMedia : GesturedeckiOS.Gesturedeck {
+  @_Concurrency.MainActor(unsafe) public var gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay
+  @_Concurrency.MainActor(unsafe) public init(on: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = nil, swipeLeftAction: (() -> Swift.Void)? = nil, swipeRightAction: (() -> Swift.Void)? = nil, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, activationKey: Swift.String? = nil, autoStart: Swift.Bool = true, gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay = GesturedeckMediaOverlay())
+  override public func start()
+  override public func stop()
+  override public var isActive: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
