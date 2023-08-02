@@ -22,25 +22,25 @@ Gesturedeck is the low-level API that allows you to build custom functionalities
 
 To integrate Gesturedeck into your iOS app, you must add the Gesturedeck framework to your project. After adding the framework, follow the steps below to integrate it with your app.
 
-### Step 1: Import Gesturedeck
+#### Step 1: Import GesturedeckiOS
 
-In your code, import Gesturedeck (or GesturedeckiOS if you imported the xcframework directly):
+Import the GesturedeckiOS module into your Swift class:
 
 ```swift
-import Gesturedeck // Or import GesturedeckiOS if you imported the xcframework directly
+import GesturedeckiOS
 ```
 
-### Step 2: Choose Integration Option
+#### Step 2: Choose Integration Option
 
 Select one of the following options based on your app's setup:
 
-#### Option 1: Using AppDelegate
+##### Option 1: Using AppDelegate
 
-It is recommended to instantiate the SDK in the `applicationDidBecomeActive` or later event, as the window might not be instantiated in the `didFinishLaunchingWithOptions` lifecycle event.
+It is recommended to initialize the SDK in the `applicationDidBecomeActive` or later event, as the window might not be initialized in the `didFinishLaunchingWithOptions` lifecycle event.
 
-#### Option 2: Using SceneDelegate
+##### Option 2: Using SceneDelegate
 
-Instantiate the SDK in the `sceneDidBecomeActive` event or later.
+Initialize the SDK in the `sceneDidBecomeActive` event or later.
 
 ```swift
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -70,7 +70,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-#### Option 3: SwiftUI Integration
+##### Option 3: SwiftUI Integration
 
 If you're using SwiftUI, there is no need for AppDelegate or SceneDelegate.
 
@@ -119,8 +119,6 @@ gesturedeckMedia.longPressAction = { /* Handle long press gesture here */ }
 ```
 
 For detailed API reference, visit [Gesturedeck API Reference](https://navideck.github.io/Gesturedeck-iOS/documentation/gesturedeckios/gesturedeck/).
-
-Sure! I have updated the code in the readme to include the `GesturedeckMediaOverlay` struct:
 
 ## GesturedeckMedia - Media Controls
 
