@@ -216,10 +216,46 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UIPanGestureRecognizer;
+@class UILongPressGestureRecognizer;
+@class UIViewController;
+@class NSString;
 
 /// A class that provides gesture recognition functionality.
 SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @interface Gesturedeck : NSObject
+/// A closure that is called when a tap gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable tapAction)(void);
+/// A closure that is called when a left swipe gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable swipeLeftAction)(void);
+/// A closure that is called when a right swipe gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
+/// A closure that is called when a pan gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+/// A closure that is called when a long press gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
+/// Initializes a new instance of the <code>Gesturedeck</code> class.
+/// \param hostViewController The view controller that the gesture recognizer is attached to.
+///
+/// \param tapAction A closure that is called when a tap gesture is recognized.
+///
+/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized.
+///
+/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized.
+///
+/// \param panAction A closure that is called when a pan gesture is recognized.
+///
+/// \param longPressAction A closure that is called when a long press gesture is recognized.
+///
+/// \param activationKey The activation key for the <code>Gesturedeck</code> instance.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart OBJC_DESIGNATED_INITIALIZER;
+/// Starts the gesture recognizer.
+- (void)start;
+/// Stops the gesture recognizer.
+- (void)stop;
+/// Determines whether the gesture recognizer is active.
+@property (nonatomic, readonly) BOOL isActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -231,10 +267,79 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer * _Nonnull)panGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class GesturedeckMediaOverlay;
 
 /// A subclass of Gesturedeck that adds media-related gestures.
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
+/// The overlay view that displays media-related gestures.
+@property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
+/// Initializes a new instance of GesturedeckMedia.
+/// \param on The view controller on which to add the gesture recognizer.
+///
+/// \param tapAction The action to perform when the user taps the screen.
+///
+/// \param swipeLeftAction The action to perform when the user swipes left.
+///
+/// \param swipeRightAction The action to perform when the user swipes right.
+///
+/// \param panAction The action to perform when the user pans the screen.
+///
+/// \param longPressAction The action to perform when the user long presses the screen.
+///
+/// \param activationKey The activation key for the app.
+///
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nonnull)gesturedeckMediaOverlay OBJC_DESIGNATED_INITIALIZER;
+- (void)start;
+- (void)stop;
+@property (nonatomic, readonly) BOOL isActive;
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart SWIFT_UNAVAILABLE;
+@end
+
+@class UIColor;
+@class UIImage;
+
+/// A struct that represents the media overlay for Gesturedeck.
+SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
+@interface GesturedeckMediaOverlay : NSObject
+/// The tint color of the media overlay.
+@property (nonatomic, strong) UIColor * _Nullable tintColor;
+/// The top icon of the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable topIcon;
+/// The icon for tapping on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconTap;
+/// The icon for toggling the tap on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconTapToggled;
+/// The icon for swiping left on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconSwipeLeft;
+/// The icon for swiping right on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconSwipeRight;
+/// A Boolean value that determines whether horizontal swipes are reversed.
+@property (nonatomic) BOOL reverseHorizontalSwipes;
+/// A Boolean value that determines whether the center icon shows the outer ring.
+@property (nonatomic) BOOL centerIconShowsOuterRing;
+/// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
+/// \param tintColor The tint color of the media overlay.
+///
+/// \param topIcon The top icon of the media overlay.
+///
+/// \param iconTap The icon for tapping on the media overlay.
+///
+/// \param iconTapToggled The icon for toggling the tap on the media overlay.
+///
+/// \param iconSwipeLeft The icon for swiping left on the media overlay.
+///
+/// \param iconSwipeRight The icon for swiping right on the media overlay.
+///
+/// \param reverseHorizontalSwipes A Boolean value that determines whether horizontal swipes are reversed.
+///
+/// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
+///
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -462,10 +567,46 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UIPanGestureRecognizer;
+@class UILongPressGestureRecognizer;
+@class UIViewController;
+@class NSString;
 
 /// A class that provides gesture recognition functionality.
 SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @interface Gesturedeck : NSObject
+/// A closure that is called when a tap gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable tapAction)(void);
+/// A closure that is called when a left swipe gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable swipeLeftAction)(void);
+/// A closure that is called when a right swipe gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
+/// A closure that is called when a pan gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+/// A closure that is called when a long press gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
+/// Initializes a new instance of the <code>Gesturedeck</code> class.
+/// \param hostViewController The view controller that the gesture recognizer is attached to.
+///
+/// \param tapAction A closure that is called when a tap gesture is recognized.
+///
+/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized.
+///
+/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized.
+///
+/// \param panAction A closure that is called when a pan gesture is recognized.
+///
+/// \param longPressAction A closure that is called when a long press gesture is recognized.
+///
+/// \param activationKey The activation key for the <code>Gesturedeck</code> instance.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart OBJC_DESIGNATED_INITIALIZER;
+/// Starts the gesture recognizer.
+- (void)start;
+/// Stops the gesture recognizer.
+- (void)stop;
+/// Determines whether the gesture recognizer is active.
+@property (nonatomic, readonly) BOOL isActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -477,10 +618,79 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer * _Nonnull)panGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class GesturedeckMediaOverlay;
 
 /// A subclass of Gesturedeck that adds media-related gestures.
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
+/// The overlay view that displays media-related gestures.
+@property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
+/// Initializes a new instance of GesturedeckMedia.
+/// \param on The view controller on which to add the gesture recognizer.
+///
+/// \param tapAction The action to perform when the user taps the screen.
+///
+/// \param swipeLeftAction The action to perform when the user swipes left.
+///
+/// \param swipeRightAction The action to perform when the user swipes right.
+///
+/// \param panAction The action to perform when the user pans the screen.
+///
+/// \param longPressAction The action to perform when the user long presses the screen.
+///
+/// \param activationKey The activation key for the app.
+///
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nonnull)gesturedeckMediaOverlay OBJC_DESIGNATED_INITIALIZER;
+- (void)start;
+- (void)stop;
+@property (nonatomic, readonly) BOOL isActive;
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart SWIFT_UNAVAILABLE;
+@end
+
+@class UIColor;
+@class UIImage;
+
+/// A struct that represents the media overlay for Gesturedeck.
+SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
+@interface GesturedeckMediaOverlay : NSObject
+/// The tint color of the media overlay.
+@property (nonatomic, strong) UIColor * _Nullable tintColor;
+/// The top icon of the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable topIcon;
+/// The icon for tapping on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconTap;
+/// The icon for toggling the tap on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconTapToggled;
+/// The icon for swiping left on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconSwipeLeft;
+/// The icon for swiping right on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconSwipeRight;
+/// A Boolean value that determines whether horizontal swipes are reversed.
+@property (nonatomic) BOOL reverseHorizontalSwipes;
+/// A Boolean value that determines whether the center icon shows the outer ring.
+@property (nonatomic) BOOL centerIconShowsOuterRing;
+/// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
+/// \param tintColor The tint color of the media overlay.
+///
+/// \param topIcon The top icon of the media overlay.
+///
+/// \param iconTap The icon for tapping on the media overlay.
+///
+/// \param iconTapToggled The icon for toggling the tap on the media overlay.
+///
+/// \param iconSwipeLeft The icon for swiping left on the media overlay.
+///
+/// \param iconSwipeRight The icon for swiping right on the media overlay.
+///
+/// \param reverseHorizontalSwipes A Boolean value that determines whether horizontal swipes are reversed.
+///
+/// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
+///
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -708,10 +918,46 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UIPanGestureRecognizer;
+@class UILongPressGestureRecognizer;
+@class UIViewController;
+@class NSString;
 
 /// A class that provides gesture recognition functionality.
 SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @interface Gesturedeck : NSObject
+/// A closure that is called when a tap gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable tapAction)(void);
+/// A closure that is called when a left swipe gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable swipeLeftAction)(void);
+/// A closure that is called when a right swipe gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
+/// A closure that is called when a pan gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+/// A closure that is called when a long press gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
+/// Initializes a new instance of the <code>Gesturedeck</code> class.
+/// \param hostViewController The view controller that the gesture recognizer is attached to.
+///
+/// \param tapAction A closure that is called when a tap gesture is recognized.
+///
+/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized.
+///
+/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized.
+///
+/// \param panAction A closure that is called when a pan gesture is recognized.
+///
+/// \param longPressAction A closure that is called when a long press gesture is recognized.
+///
+/// \param activationKey The activation key for the <code>Gesturedeck</code> instance.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart OBJC_DESIGNATED_INITIALIZER;
+/// Starts the gesture recognizer.
+- (void)start;
+/// Stops the gesture recognizer.
+- (void)stop;
+/// Determines whether the gesture recognizer is active.
+@property (nonatomic, readonly) BOOL isActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -723,10 +969,79 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer * _Nonnull)panGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class GesturedeckMediaOverlay;
 
 /// A subclass of Gesturedeck that adds media-related gestures.
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
+/// The overlay view that displays media-related gestures.
+@property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
+/// Initializes a new instance of GesturedeckMedia.
+/// \param on The view controller on which to add the gesture recognizer.
+///
+/// \param tapAction The action to perform when the user taps the screen.
+///
+/// \param swipeLeftAction The action to perform when the user swipes left.
+///
+/// \param swipeRightAction The action to perform when the user swipes right.
+///
+/// \param panAction The action to perform when the user pans the screen.
+///
+/// \param longPressAction The action to perform when the user long presses the screen.
+///
+/// \param activationKey The activation key for the app.
+///
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nonnull)gesturedeckMediaOverlay OBJC_DESIGNATED_INITIALIZER;
+- (void)start;
+- (void)stop;
+@property (nonatomic, readonly) BOOL isActive;
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart SWIFT_UNAVAILABLE;
+@end
+
+@class UIColor;
+@class UIImage;
+
+/// A struct that represents the media overlay for Gesturedeck.
+SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
+@interface GesturedeckMediaOverlay : NSObject
+/// The tint color of the media overlay.
+@property (nonatomic, strong) UIColor * _Nullable tintColor;
+/// The top icon of the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable topIcon;
+/// The icon for tapping on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconTap;
+/// The icon for toggling the tap on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconTapToggled;
+/// The icon for swiping left on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconSwipeLeft;
+/// The icon for swiping right on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconSwipeRight;
+/// A Boolean value that determines whether horizontal swipes are reversed.
+@property (nonatomic) BOOL reverseHorizontalSwipes;
+/// A Boolean value that determines whether the center icon shows the outer ring.
+@property (nonatomic) BOOL centerIconShowsOuterRing;
+/// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
+/// \param tintColor The tint color of the media overlay.
+///
+/// \param topIcon The top icon of the media overlay.
+///
+/// \param iconTap The icon for tapping on the media overlay.
+///
+/// \param iconTapToggled The icon for toggling the tap on the media overlay.
+///
+/// \param iconSwipeLeft The icon for swiping left on the media overlay.
+///
+/// \param iconSwipeRight The icon for swiping right on the media overlay.
+///
+/// \param reverseHorizontalSwipes A Boolean value that determines whether horizontal swipes are reversed.
+///
+/// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
+///
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -954,10 +1269,46 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UIPanGestureRecognizer;
+@class UILongPressGestureRecognizer;
+@class UIViewController;
+@class NSString;
 
 /// A class that provides gesture recognition functionality.
 SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @interface Gesturedeck : NSObject
+/// A closure that is called when a tap gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable tapAction)(void);
+/// A closure that is called when a left swipe gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable swipeLeftAction)(void);
+/// A closure that is called when a right swipe gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
+/// A closure that is called when a pan gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+/// A closure that is called when a long press gesture is recognized.
+@property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
+/// Initializes a new instance of the <code>Gesturedeck</code> class.
+/// \param hostViewController The view controller that the gesture recognizer is attached to.
+///
+/// \param tapAction A closure that is called when a tap gesture is recognized.
+///
+/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized.
+///
+/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized.
+///
+/// \param panAction A closure that is called when a pan gesture is recognized.
+///
+/// \param longPressAction A closure that is called when a long press gesture is recognized.
+///
+/// \param activationKey The activation key for the <code>Gesturedeck</code> instance.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart OBJC_DESIGNATED_INITIALIZER;
+/// Starts the gesture recognizer.
+- (void)start;
+/// Stops the gesture recognizer.
+- (void)stop;
+/// Determines whether the gesture recognizer is active.
+@property (nonatomic, readonly) BOOL isActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -969,10 +1320,79 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer * _Nonnull)panGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class GesturedeckMediaOverlay;
 
 /// A subclass of Gesturedeck that adds media-related gestures.
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
+/// The overlay view that displays media-related gestures.
+@property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
+/// Initializes a new instance of GesturedeckMedia.
+/// \param on The view controller on which to add the gesture recognizer.
+///
+/// \param tapAction The action to perform when the user taps the screen.
+///
+/// \param swipeLeftAction The action to perform when the user swipes left.
+///
+/// \param swipeRightAction The action to perform when the user swipes right.
+///
+/// \param panAction The action to perform when the user pans the screen.
+///
+/// \param longPressAction The action to perform when the user long presses the screen.
+///
+/// \param activationKey The activation key for the app.
+///
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nonnull)gesturedeckMediaOverlay OBJC_DESIGNATED_INITIALIZER;
+- (void)start;
+- (void)stop;
+@property (nonatomic, readonly) BOOL isActive;
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart SWIFT_UNAVAILABLE;
+@end
+
+@class UIColor;
+@class UIImage;
+
+/// A struct that represents the media overlay for Gesturedeck.
+SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
+@interface GesturedeckMediaOverlay : NSObject
+/// The tint color of the media overlay.
+@property (nonatomic, strong) UIColor * _Nullable tintColor;
+/// The top icon of the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable topIcon;
+/// The icon for tapping on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconTap;
+/// The icon for toggling the tap on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconTapToggled;
+/// The icon for swiping left on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconSwipeLeft;
+/// The icon for swiping right on the media overlay.
+@property (nonatomic, strong) UIImage * _Nullable iconSwipeRight;
+/// A Boolean value that determines whether horizontal swipes are reversed.
+@property (nonatomic) BOOL reverseHorizontalSwipes;
+/// A Boolean value that determines whether the center icon shows the outer ring.
+@property (nonatomic) BOOL centerIconShowsOuterRing;
+/// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
+/// \param tintColor The tint color of the media overlay.
+///
+/// \param topIcon The top icon of the media overlay.
+///
+/// \param iconTap The icon for tapping on the media overlay.
+///
+/// \param iconTapToggled The icon for toggling the tap on the media overlay.
+///
+/// \param iconSwipeLeft The icon for swiping left on the media overlay.
+///
+/// \param iconSwipeRight The icon for swiping right on the media overlay.
+///
+/// \param reverseHorizontalSwipes A Boolean value that determines whether horizontal swipes are reversed.
+///
+/// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
+///
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
