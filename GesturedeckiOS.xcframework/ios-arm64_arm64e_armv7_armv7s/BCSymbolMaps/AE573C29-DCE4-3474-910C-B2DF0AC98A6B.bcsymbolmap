@@ -435,7 +435,6 @@ animateAppearance
 Gesturedeck/GestureViewController.swift
 $s14GesturedeckiOS21GestureViewControllerC11gestureType10centerIcon23gesturedeckMediaOverlayAcA0cG0OSg_So7UIImageCSgAA011GesturedeckkL0CtcfcfA1_
 Gesturedeck/GesturedeckMedia/GesturedeckMediaOverlay.swift
-$s14GesturedeckiOS23GesturedeckMediaOverlayC9tintColor7topIcon7iconTap0jK7Toggled0J9SwipeLeft0jM5Right23reverseHorizontalSwipes06centerI14ShowsOuterRingACSo7UIColorCSg_So7UIImageCSgA4QS2btcfcfA_
 bundle.get
 Gesturedeck/GestureViewControllerOverlay.swift
 contains
@@ -712,11 +711,11 @@ gesturedeckMediaOverlay.get
 volumeIconOutlet.get
 volumeLabel.get
 tintColor.get
+gestureType.get
 iconTap.get
 iconTapToggled.get
 iconSwipeLeft.get
 iconSwipeRight.get
-gestureType.get
 centerIcon.get
 topIcon.get
 viewDidLayoutSubviews

@@ -35,7 +35,7 @@ extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
   @objc public var iconSwipeRight: UIKit.UIImage?
   @objc public var reverseHorizontalSwipes: Swift.Bool
   @objc public var centerIconShowsOuterRing: Swift.Bool
-  @objc public init(tintColor: UIKit.UIColor? = UIColor(red: 28.0 / 255, green: 30.0 / 255, blue: 57.0 / 255, alpha: 0.9), topIcon: UIKit.UIImage? = nil, iconTap: UIKit.UIImage? = nil, iconTapToggled: UIKit.UIImage? = nil, iconSwipeLeft: UIKit.UIImage? = nil, iconSwipeRight: UIKit.UIImage? = nil, reverseHorizontalSwipes: Swift.Bool = false, centerIconShowsOuterRing: Swift.Bool = true)
+  @objc public init(tintColor: UIKit.UIColor? = nil, topIcon: UIKit.UIImage? = nil, iconTap: UIKit.UIImage? = nil, iconTapToggled: UIKit.UIImage? = nil, iconSwipeLeft: UIKit.UIImage? = nil, iconSwipeRight: UIKit.UIImage? = nil, reverseHorizontalSwipes: Swift.Bool = false, centerIconShowsOuterRing: Swift.Bool = true)
   @objc deinit
 }
 @objc @_Concurrency.MainActor(unsafe) public class GesturedeckMedia : GesturedeckiOS.Gesturedeck {
