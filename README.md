@@ -13,6 +13,7 @@ Imagine enhancing your app with the ability to adjust volume, skip tracks, and p
 - Integrated GesturedeckMedia for media app controls with overlay UI support.
 - Support for volume button actions with GesturedeckMedia.
 - Sensitivity settings for fine-tuning gesture responsiveness.
+- Does not require internet connectivity
 
 ## Gesturedeck
 
@@ -20,7 +21,9 @@ Gesturedeck is the low-level API that allows you to build custom functionalities
 
 ### Getting Started with Gesturedeck
 
-To integrate Gesturedeck into your iOS app, you must add the Gesturedeck framework to your project. After adding the framework, follow the steps below to integrate it with your app.
+To integrate Gesturedeck into your iOS app, you must add the Gesturedeck framework to your project. You can easily do that using Swift Package Manager (SPM). Through Xcode, go to Package Dependencies, click `+`` and simply use the URL of this repo. SPM will fetch and add the framework automatically. 
+
+After adding the framework, follow the steps below to integrate it with your app.
 
 #### Step 1: Import GesturedeckiOS
 
@@ -154,6 +157,14 @@ let gesturedeckMedia = GesturedeckMedia(
 Please note that you need to replace `YOUR_TOP_ICON`, `YOUR_ICON_TAP`, `YOUR_ICON_TAP_TOGGLED`, `YOUR_ICON_SWIPE_LEFT`, and `YOUR_ICON_SWIPE_RIGHT` with your own images that you want to use for the media overlay icons.
 
 For detailed API reference, visit [GesturedeckMedia API Reference](https://navideck.github.io/Gesturedeck-iOS/documentation/gesturedeckios/gesturedeckmedia/).
+
+## Free to Use
+Gesturedeck SDK is free to use, providing you with the full functionality of the SDK without any time limitations. You are welcome to integrate it into both personal and commercial projects. When using Gesturedeck SDK for free, a watermark will be presented during runtime. It is strictly prohibited  to hide, remove, or alter in any way the watermark from the free version of Gesturedeck SDK.
+
+### Activation Key and Watermark Removal
+For those who wish to remove the watermark from their app, we offer an activation key that allows you to use the SDK without any watermarks. However, please be aware that the watermark-free version is not available for free and requires a purchase.
+
+To inquire about purchasing an activation key or if you have any other questions related to licensing and usage, please contact us at team@navideck.com. We will be happy to assist you with the process and provide you with the necessary information.
 
 ## Contact
 
