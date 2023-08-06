@@ -21,7 +21,7 @@ Gesturedeck is the low-level API that allows you to build custom functionalities
 
 ### Getting Started with Gesturedeck
 
-To integrate Gesturedeck into your iOS app, you must add the Gesturedeck framework to your project. You can easily do that using Swift Package Manager (SPM). Through Xcode, go to Package Dependencies, click `+`` and simply use the URL of this repo. SPM will fetch and add the framework automatically. 
+To integrate Gesturedeck into your iOS app, you must add the Gesturedeck framework to your project. You can easily do that using Swift Package Manager (SPM). Through Xcode, go to `Package Dependencies`, click `+` and simply use the URL of this repo. SPM will fetch and add the framework automatically.
 
 After adding the framework, follow the steps below to integrate it with your app.
 
@@ -39,11 +39,24 @@ Select one of the following options based on your app's setup:
 
 ##### Option 1: Using AppDelegate
 
-It is recommended to initialize the SDK in the `applicationDidBecomeActive` or later event, as the window might not be initialized in the `didFinishLaunchingWithOptions` lifecycle event.
+It is recommended to initialize the SDK in the `applicationDidBecomeActive` or later event, as the window might not be initialized in the `didFinishLaunchingWithOptions` lifecycle event. Make sure that you avoid initializing Gesturedeck multiple times.
+
+```swift
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+  var window: UIWindow?
+  var gesturedeck: Gesturedeck?
+
+  func applicationDidBecomeActive(_ application: UIApplication) {
+    // Initialize Gesturedeck
+    gesturedeck = gesturedeck ?? Gesturedeck()
+  }
+}
+```
 
 ##### Option 2: Using SceneDelegate
 
-Initialize the SDK in the `sceneDidBecomeActive` event or later.
+Initialize the SDK in the `sceneDidBecomeActive` event or later. Make sure that you avoid initializing Gesturedeck multiple times.
 
 ```swift
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -57,7 +70,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
     
-    gesturedeck = Gesturedeck()
+    gesturedeck = gesturedeck ?? Gesturedeck()
     gesturedeck?.tapAction = {
         print("Tapped")
     }
@@ -91,10 +104,9 @@ var body: some Scene {
     }
     .onChange(of: scenePhase) { phase in
         if phase == .active {
-            gesturedeck = Gesturedeck()
-            gesturedeck?.tapAction = { callback in
+            gesturedeck = gesturedeck ?? Gesturedeck()
+            gesturedeck?.tapAction = {
                 print("Tapped")
-                callback(true)  // Without a callback, no icon is displayed
             }
 
             gesturedeck?.swipeLeftAction = {
@@ -109,29 +121,37 @@ var body: some Scene {
 }
 ```
 
-### Listen to Individual Gestures
+### Gesture Actions
 
-To listen to individual gestures, you can use the properties `tapAction`, `swipeRightAction`, `swipeLeftAction`, `panAction`, and `longPressAction` in GesturedeckMedia's constructor.
+While you can initialize Gesturedeck without any arguments, no action will be executed upon performing a gesture. To set the action for a specific gesture, you can use the arguments `tapAction`, `swipeRightAction`, `swipeLeftAction`, `panAction`, and `longPressAction` in Gesturedeck's constructor or set them afterwards.
 
 ```swift
-gesturedeckMedia.tapAction = { /* Handle tap gesture here */ }
-gesturedeckMedia.swipeRightAction = { /* Handle swipe right gesture here */ }
-gesturedeckMedia.swipeLeftAction = { /* Handle swipe left gesture here */ }
-gesturedeckMedia.panAction = { /* Handle pan gesture here */ }
-gesturedeckMedia.longPressAction = { /* Handle long press gesture here */ }
+gesturedeck.tapAction = { /* Handle tap gesture here */ }
+gesturedeck.swipeRightAction = { /* Handle swipe right gesture here */ }
+gesturedeck.swipeLeftAction = { /* Handle swipe left gesture here */ }
+gesturedeck.panAction = { /* Handle pan gesture here */ }
+gesturedeck.longPressAction = { /* Handle long press gesture here */ }
 ```
 
 For detailed API reference, visit [Gesturedeck API Reference](https://navideck.github.io/Gesturedeck-iOS/documentation/gesturedeckios/gesturedeck/).
 
 ## GesturedeckMedia - Media Controls
 
-GesturedeckMedia is a specialized implementation built on top of Gesturedeck, tailored specifically for media apps. It provides default gesture actions that can be customized to suit your app's requirements.
+GesturedeckMedia is a specialized implementation built on top of Gesturedeck, tailored specifically for media apps. It provides default gesture actions that can be customized to suit your app's requirements. 
+
+You can initialize GesturedeckMedia without any arguments and have **start/stop**, **skip next/previous** and **volume up/down** work out of the box. Note that due to iOS limitations, skip next/previous only works for the system media player.
 
 ### Getting Started with GesturedeckMedia
 
 To use GesturedeckMedia for showing media controls UI, follow these steps:
 
-1. Initialize `GesturedeckMedia` with `GesturedeckMediaOverlay`:
+1. Initialize `GesturedeckMedia`
+
+```swift
+let gesturedeckMedia = GesturedeckMedia()
+```
+
+or initialize `GesturedeckMedia` with `GesturedeckMediaOverlay` and actions:
 
 ```swift
 let gesturedeckMedia = GesturedeckMedia(
@@ -157,6 +177,27 @@ let gesturedeckMedia = GesturedeckMedia(
 Please note that you need to replace `YOUR_TOP_ICON`, `YOUR_ICON_TAP`, `YOUR_ICON_TAP_TOGGLED`, `YOUR_ICON_SWIPE_LEFT`, and `YOUR_ICON_SWIPE_RIGHT` with your own images that you want to use for the media overlay icons.
 
 For detailed API reference, visit [GesturedeckMedia API Reference](https://navideck.github.io/Gesturedeck-iOS/documentation/gesturedeckios/gesturedeckmedia/).
+
+## Objective-C
+Gesturedeck is fully compatible with `Objective-C`. When using Objective-C you can initialize Gesturedeck or GesturedeckMedia using:
+
+```objective-c
+@import GesturedeckiOS;
+```
+
+```objective-c
+@property Gesturedeck *gesturedeck;
+```
+
+and
+
+```objective-c
+if (self.gesturedeck == nil) {
+    self.gesturedeck = [[Gesturedeck alloc] init];
+}
+```
+
+If you want to use GesturedeckMedia, replace Gesturedeck with GesturedeckMedia in the above snippets.
 
 ## Free to Use
 Gesturedeck SDK is free to use, providing you with the full functionality of the SDK without any time limitations. You are welcome to integrate it into both personal and commercial projects. When using Gesturedeck SDK for free, a watermark will be presented during runtime. It is strictly prohibited  to hide, remove, or alter in any way the watermark from the free version of Gesturedeck SDK.
