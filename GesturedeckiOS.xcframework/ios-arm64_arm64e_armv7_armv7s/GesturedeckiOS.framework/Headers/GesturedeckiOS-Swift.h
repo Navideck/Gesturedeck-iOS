@@ -217,6 +217,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UIPanGestureRecognizer;
+enum PanSensitivity : NSInteger;
 @class UILongPressGestureRecognizer;
 @class UIViewController;
 @class NSString;
@@ -232,32 +233,36 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
 /// A closure that is called when a pan gesture is recognized.
 @property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+/// The sensitivity of the pan gestures.
+@property (nonatomic) enum PanSensitivity panSensitivity;
 /// A closure that is called when a long press gesture is recognized.
 @property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
 /// Initializes a new instance of the <code>Gesturedeck</code> class.
-/// \param hostViewController The view controller that the gesture recognizer is attached to.
+/// \param hostViewController The view controller that the gesture recognizer is attached to. Defaults to <code>nil</code>.
 ///
-/// \param tapAction A closure that is called when a tap gesture is recognized.
+/// \param tapAction A closure that is called when a tap gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized.
+/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized.
+/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param panAction A closure that is called when a pan gesture is recognized.
+/// \param panAction A closure that is called when a pan gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param longPressAction A closure that is called when a long press gesture is recognized.
+/// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param activationKey The activation key for the <code>Gesturedeck</code> instance.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
 ///
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart OBJC_DESIGNATED_INITIALIZER;
+/// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart panSensitivity:(enum PanSensitivity)panSensitivity OBJC_DESIGNATED_INITIALIZER;
+/// A convenience initializer for the <code>Gesturedeck</code> class. You need to set the actions for the corresponsing gestures after initializing.
+- (nonnull instancetype)init;
 /// Starts the gesture recognizer.
 - (void)start;
 /// Stops the gesture recognizer.
 - (void)stop;
 /// Determines whether the gesture recognizer is active.
 @property (nonatomic, readonly) BOOL isActive;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIGestureRecognizer;
@@ -275,27 +280,34 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 /// The overlay view that displays media-related gestures.
 @property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
 /// Initializes a new instance of GesturedeckMedia.
-/// \param on The view controller on which to add the gesture recognizer.
+/// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
+/// \param on The view controller on which to add the gesture recognizer. Defaults to <code>nil</code>.
 ///
-/// \param tapAction The action to perform when the user taps the screen.
+/// \param tapAction The action to perform when the user taps the screen. Defaults to <code>nil</code>.
 ///
-/// \param swipeLeftAction The action to perform when the user swipes left.
+/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to <code>nil</code>.
 ///
-/// \param swipeRightAction The action to perform when the user swipes right.
+/// \param swipeRightAction The action to perform when the user swipes right. Defaults to <code>nil</code>.
 ///
-/// \param panAction The action to perform when the user pans the screen.
+/// \param panAction The action to perform when the user pans the screen. Defaults to <code>nil</code>.
 ///
-/// \param longPressAction The action to perform when the user long presses the screen.
+/// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
 ///
-/// \param activationKey The activation key for the app.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
 ///
-/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures.
+/// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nonnull)gesturedeckMediaOverlay OBJC_DESIGNATED_INITIALIZER;
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. If you pass nil then the default GesturedeckMediaOverlay is used. Defaults to <code>nil</code>.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nullable)gesturedeckMediaOverlay panSensitivity:(enum PanSensitivity)panSensitivity OBJC_DESIGNATED_INITIALIZER;
+/// A convenience initializer for the <code>GesturedeckMedia</code> class.
+/// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
+/// Note that due to iOS limitations, skip next/previous only works for the system media player.
+- (nonnull instancetype)init;
 - (void)start;
 - (void)stop;
 @property (nonatomic, readonly) BOOL isActive;
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart panSensitivity:(enum PanSensitivity)panSensitivity SWIFT_UNAVAILABLE;
 @end
 
 @class UIColor;
@@ -341,6 +353,12 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, PanSensitivity, open) {
+  PanSensitivityLow = 100,
+  PanSensitivityMedium = 20,
+  PanSensitivityHigh = 0,
+};
 
 
 
@@ -568,6 +586,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UIPanGestureRecognizer;
+enum PanSensitivity : NSInteger;
 @class UILongPressGestureRecognizer;
 @class UIViewController;
 @class NSString;
@@ -583,32 +602,36 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
 /// A closure that is called when a pan gesture is recognized.
 @property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+/// The sensitivity of the pan gestures.
+@property (nonatomic) enum PanSensitivity panSensitivity;
 /// A closure that is called when a long press gesture is recognized.
 @property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
 /// Initializes a new instance of the <code>Gesturedeck</code> class.
-/// \param hostViewController The view controller that the gesture recognizer is attached to.
+/// \param hostViewController The view controller that the gesture recognizer is attached to. Defaults to <code>nil</code>.
 ///
-/// \param tapAction A closure that is called when a tap gesture is recognized.
+/// \param tapAction A closure that is called when a tap gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized.
+/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized.
+/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param panAction A closure that is called when a pan gesture is recognized.
+/// \param panAction A closure that is called when a pan gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param longPressAction A closure that is called when a long press gesture is recognized.
+/// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param activationKey The activation key for the <code>Gesturedeck</code> instance.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
 ///
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart OBJC_DESIGNATED_INITIALIZER;
+/// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart panSensitivity:(enum PanSensitivity)panSensitivity OBJC_DESIGNATED_INITIALIZER;
+/// A convenience initializer for the <code>Gesturedeck</code> class. You need to set the actions for the corresponsing gestures after initializing.
+- (nonnull instancetype)init;
 /// Starts the gesture recognizer.
 - (void)start;
 /// Stops the gesture recognizer.
 - (void)stop;
 /// Determines whether the gesture recognizer is active.
 @property (nonatomic, readonly) BOOL isActive;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIGestureRecognizer;
@@ -626,27 +649,34 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 /// The overlay view that displays media-related gestures.
 @property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
 /// Initializes a new instance of GesturedeckMedia.
-/// \param on The view controller on which to add the gesture recognizer.
+/// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
+/// \param on The view controller on which to add the gesture recognizer. Defaults to <code>nil</code>.
 ///
-/// \param tapAction The action to perform when the user taps the screen.
+/// \param tapAction The action to perform when the user taps the screen. Defaults to <code>nil</code>.
 ///
-/// \param swipeLeftAction The action to perform when the user swipes left.
+/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to <code>nil</code>.
 ///
-/// \param swipeRightAction The action to perform when the user swipes right.
+/// \param swipeRightAction The action to perform when the user swipes right. Defaults to <code>nil</code>.
 ///
-/// \param panAction The action to perform when the user pans the screen.
+/// \param panAction The action to perform when the user pans the screen. Defaults to <code>nil</code>.
 ///
-/// \param longPressAction The action to perform when the user long presses the screen.
+/// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
 ///
-/// \param activationKey The activation key for the app.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
 ///
-/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures.
+/// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nonnull)gesturedeckMediaOverlay OBJC_DESIGNATED_INITIALIZER;
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. If you pass nil then the default GesturedeckMediaOverlay is used. Defaults to <code>nil</code>.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nullable)gesturedeckMediaOverlay panSensitivity:(enum PanSensitivity)panSensitivity OBJC_DESIGNATED_INITIALIZER;
+/// A convenience initializer for the <code>GesturedeckMedia</code> class.
+/// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
+/// Note that due to iOS limitations, skip next/previous only works for the system media player.
+- (nonnull instancetype)init;
 - (void)start;
 - (void)stop;
 @property (nonatomic, readonly) BOOL isActive;
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart panSensitivity:(enum PanSensitivity)panSensitivity SWIFT_UNAVAILABLE;
 @end
 
 @class UIColor;
@@ -692,6 +722,12 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, PanSensitivity, open) {
+  PanSensitivityLow = 100,
+  PanSensitivityMedium = 20,
+  PanSensitivityHigh = 0,
+};
 
 
 
@@ -919,6 +955,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UIPanGestureRecognizer;
+enum PanSensitivity : NSInteger;
 @class UILongPressGestureRecognizer;
 @class UIViewController;
 @class NSString;
@@ -934,32 +971,36 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
 /// A closure that is called when a pan gesture is recognized.
 @property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+/// The sensitivity of the pan gestures.
+@property (nonatomic) enum PanSensitivity panSensitivity;
 /// A closure that is called when a long press gesture is recognized.
 @property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
 /// Initializes a new instance of the <code>Gesturedeck</code> class.
-/// \param hostViewController The view controller that the gesture recognizer is attached to.
+/// \param hostViewController The view controller that the gesture recognizer is attached to. Defaults to <code>nil</code>.
 ///
-/// \param tapAction A closure that is called when a tap gesture is recognized.
+/// \param tapAction A closure that is called when a tap gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized.
+/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized.
+/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param panAction A closure that is called when a pan gesture is recognized.
+/// \param panAction A closure that is called when a pan gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param longPressAction A closure that is called when a long press gesture is recognized.
+/// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param activationKey The activation key for the <code>Gesturedeck</code> instance.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
 ///
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart OBJC_DESIGNATED_INITIALIZER;
+/// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart panSensitivity:(enum PanSensitivity)panSensitivity OBJC_DESIGNATED_INITIALIZER;
+/// A convenience initializer for the <code>Gesturedeck</code> class. You need to set the actions for the corresponsing gestures after initializing.
+- (nonnull instancetype)init;
 /// Starts the gesture recognizer.
 - (void)start;
 /// Stops the gesture recognizer.
 - (void)stop;
 /// Determines whether the gesture recognizer is active.
 @property (nonatomic, readonly) BOOL isActive;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIGestureRecognizer;
@@ -977,27 +1018,34 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 /// The overlay view that displays media-related gestures.
 @property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
 /// Initializes a new instance of GesturedeckMedia.
-/// \param on The view controller on which to add the gesture recognizer.
+/// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
+/// \param on The view controller on which to add the gesture recognizer. Defaults to <code>nil</code>.
 ///
-/// \param tapAction The action to perform when the user taps the screen.
+/// \param tapAction The action to perform when the user taps the screen. Defaults to <code>nil</code>.
 ///
-/// \param swipeLeftAction The action to perform when the user swipes left.
+/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to <code>nil</code>.
 ///
-/// \param swipeRightAction The action to perform when the user swipes right.
+/// \param swipeRightAction The action to perform when the user swipes right. Defaults to <code>nil</code>.
 ///
-/// \param panAction The action to perform when the user pans the screen.
+/// \param panAction The action to perform when the user pans the screen. Defaults to <code>nil</code>.
 ///
-/// \param longPressAction The action to perform when the user long presses the screen.
+/// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
 ///
-/// \param activationKey The activation key for the app.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
 ///
-/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures.
+/// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nonnull)gesturedeckMediaOverlay OBJC_DESIGNATED_INITIALIZER;
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. If you pass nil then the default GesturedeckMediaOverlay is used. Defaults to <code>nil</code>.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nullable)gesturedeckMediaOverlay panSensitivity:(enum PanSensitivity)panSensitivity OBJC_DESIGNATED_INITIALIZER;
+/// A convenience initializer for the <code>GesturedeckMedia</code> class.
+/// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
+/// Note that due to iOS limitations, skip next/previous only works for the system media player.
+- (nonnull instancetype)init;
 - (void)start;
 - (void)stop;
 @property (nonatomic, readonly) BOOL isActive;
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart panSensitivity:(enum PanSensitivity)panSensitivity SWIFT_UNAVAILABLE;
 @end
 
 @class UIColor;
@@ -1043,6 +1091,12 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, PanSensitivity, open) {
+  PanSensitivityLow = 100,
+  PanSensitivityMedium = 20,
+  PanSensitivityHigh = 0,
+};
 
 
 
@@ -1270,6 +1324,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UIPanGestureRecognizer;
+enum PanSensitivity : NSInteger;
 @class UILongPressGestureRecognizer;
 @class UIViewController;
 @class NSString;
@@ -1285,32 +1340,36 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
 /// A closure that is called when a pan gesture is recognized.
 @property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+/// The sensitivity of the pan gestures.
+@property (nonatomic) enum PanSensitivity panSensitivity;
 /// A closure that is called when a long press gesture is recognized.
 @property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
 /// Initializes a new instance of the <code>Gesturedeck</code> class.
-/// \param hostViewController The view controller that the gesture recognizer is attached to.
+/// \param hostViewController The view controller that the gesture recognizer is attached to. Defaults to <code>nil</code>.
 ///
-/// \param tapAction A closure that is called when a tap gesture is recognized.
+/// \param tapAction A closure that is called when a tap gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized.
+/// \param swipeLeftAction A closure that is called when a left swipe gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized.
+/// \param swipeRightAction A closure that is called when a right swipe gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param panAction A closure that is called when a pan gesture is recognized.
+/// \param panAction A closure that is called when a pan gesture is recognized. Defaults to <code>nil</code>.
 ///
-/// \param longPressAction A closure that is called when a long press gesture is recognized.
+/// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param activationKey The activation key for the <code>Gesturedeck</code> instance.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
 ///
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart OBJC_DESIGNATED_INITIALIZER;
+/// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart panSensitivity:(enum PanSensitivity)panSensitivity OBJC_DESIGNATED_INITIALIZER;
+/// A convenience initializer for the <code>Gesturedeck</code> class. You need to set the actions for the corresponsing gestures after initializing.
+- (nonnull instancetype)init;
 /// Starts the gesture recognizer.
 - (void)start;
 /// Stops the gesture recognizer.
 - (void)stop;
 /// Determines whether the gesture recognizer is active.
 @property (nonatomic, readonly) BOOL isActive;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIGestureRecognizer;
@@ -1328,27 +1387,34 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 /// The overlay view that displays media-related gestures.
 @property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
 /// Initializes a new instance of GesturedeckMedia.
-/// \param on The view controller on which to add the gesture recognizer.
+/// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
+/// \param on The view controller on which to add the gesture recognizer. Defaults to <code>nil</code>.
 ///
-/// \param tapAction The action to perform when the user taps the screen.
+/// \param tapAction The action to perform when the user taps the screen. Defaults to <code>nil</code>.
 ///
-/// \param swipeLeftAction The action to perform when the user swipes left.
+/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to <code>nil</code>.
 ///
-/// \param swipeRightAction The action to perform when the user swipes right.
+/// \param swipeRightAction The action to perform when the user swipes right. Defaults to <code>nil</code>.
 ///
-/// \param panAction The action to perform when the user pans the screen.
+/// \param panAction The action to perform when the user pans the screen. Defaults to <code>nil</code>.
 ///
-/// \param longPressAction The action to perform when the user long presses the screen.
+/// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
 ///
-/// \param activationKey The activation key for the app.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
 ///
-/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures.
+/// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nonnull)gesturedeckMediaOverlay OBJC_DESIGNATED_INITIALIZER;
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. If you pass nil then the default GesturedeckMediaOverlay is used. Defaults to <code>nil</code>.
+///
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)on tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart gesturedeckMediaOverlay:(GesturedeckMediaOverlay * _Nullable)gesturedeckMediaOverlay panSensitivity:(enum PanSensitivity)panSensitivity OBJC_DESIGNATED_INITIALIZER;
+/// A convenience initializer for the <code>GesturedeckMedia</code> class.
+/// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
+/// Note that due to iOS limitations, skip next/previous only works for the system media player.
+- (nonnull instancetype)init;
 - (void)start;
 - (void)stop;
 @property (nonatomic, readonly) BOOL isActive;
-- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initOn:(UIViewController * _Nullable)hostViewController tapAction:(void (^ _Nullable)(void))tapAction swipeLeftAction:(void (^ _Nullable)(void))swipeLeftAction swipeRightAction:(void (^ _Nullable)(void))swipeRightAction panAction:(void (^ _Nullable)(UIPanGestureRecognizer * _Nonnull))panAction longPressAction:(void (^ _Nullable)(UILongPressGestureRecognizer * _Nonnull))longPressAction activationKey:(NSString * _Nullable)activationKey autoStart:(BOOL)autoStart panSensitivity:(enum PanSensitivity)panSensitivity SWIFT_UNAVAILABLE;
 @end
 
 @class UIColor;
@@ -1394,6 +1460,12 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, PanSensitivity, open) {
+  PanSensitivityLow = 100,
+  PanSensitivityMedium = 20,
+  PanSensitivityHigh = 0,
+};
 
 
 
