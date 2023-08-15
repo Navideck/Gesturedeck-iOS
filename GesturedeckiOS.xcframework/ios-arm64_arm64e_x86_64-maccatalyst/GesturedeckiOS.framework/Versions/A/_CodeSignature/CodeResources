@@ -18,7 +18,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		2u6cflr04VCnYp+kFh7wcODTnIc=
+		PeP+7rhZupZ1vyjxwnWWH9phgiI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -34,70 +34,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gWGcuciLARKDyyh2Af+g4XajAEmGNCEHL/gLnvOPilI=
+			a9XxB09Q9NYVx6olFOggu/TzjCYWtQkLAmlGZvJPh2Q=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FkQ776qKNowmRpc50jeVvAyk7jNVo8oFhrNDl1s9WhM=
+			m5MUmp9GN4IoNx8jKQsw278Sy5JKUJ6uefwHtBicWvA=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vc+O9xTZKWwyDgzr0e9k0nwLhu3RxlmxOt9l+xqag+E=
+			RTNtLd0IZWA7fFpB6UZi0JMpGUm2R+HfGmNm7ZnQqQw=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7tOYpS1RLUr9Inq4Hbb5hN2A52joKLosk19JCf/hd0o=
+			7OdX7ujh3907+iIoNg8sPx0Ih3jZSE1/CJ7iFfla7qU=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C9c512NEsa407nXnsbvY7YL33fKgLiTexeXjURvS2Ug=
+			e4Hi1SFB7XMqe9rhk2vVVSoC+H/qHDQqYfa1jvnl0FA=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7gsm3HtlREX0Ydko8KrnF8GqRmrAPmpLc5Vp6G0T0qY=
+			LUIl7jIyBLsq1PFumSMaNTLSvtwF95rj5dWKdCnPdhw=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KUmqPj59DTffBV+zV2eVzt4YYEvurOf++b4mZOCheeY=
+			YKgAZMuoldmWwsCl08Pi4PjV9+1t6gy9UP5Jgv2hGvg=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7H6S6AAfpk3QHVoiW8tyeukZhaujZVGVPjpFH8Dtz04=
+			HWNKx+6fkw+yAMezLV7LiBOnn/bTI5PwoZkCEg7EXTk=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			poMypHbjgvEWBhX/paywO1CocRgGkubC78KsswC5BMo=
+			1zQSqvx0d3YtANMgz6zTmT3j3kpYbJKFIHismq82Ltw=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kgbdBndVVIRCbktB8SAef7s4BEA/rMJtKAwJdujKpXc=
+			0GbOKmop7oAjm3D+XXYvcD2hZIkAQnuspr+s3Mt8oa4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -132,7 +132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/3oYV+f1UxWC6qzFGMoPj0KfjoSixNiYnArmPoMhilM=
+			0g0rly0w1jPYW8y/zHFLgaSeqevq0afg4ysiUuvq68o=
 			</data>
 		</dict>
 	</dict>

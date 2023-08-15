@@ -222,7 +222,11 @@ enum PanSensitivity : NSInteger;
 @class UIViewController;
 @class NSString;
 
-/// A class that provides gesture recognition functionality.
+/// This is the low-level API that allows you to build custom functionalities on top of Gesturedeck, with seamless callbacks for Gesturedeck’s gestures.
+/// The library provides callbacks for each gesture, allowing developers to perform custom actions in response to user input.
+/// It allows developers to easily add support for multi-finger and single-finger gestures such as taps, swipes, pans, and long presses to their apps, that are active on top of the entire UI and do not interfere with the apps’ UI elements.
+/// To use Gesturedeck, create an instance of the <code>Gesturedeck</code> class and pass in the required parameters. When a gesture is detected, the corresponding callback will be invoked.
+/// Gesturedeck requires an activation key to remove watermarks. The activation key can be obtained by contacting Navideck, the creators of Gesturedeck. The watermarked mode is available for free for developers who want to use it without setting an activation key.
 SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @interface Gesturedeck : NSObject
 /// A closure that is called when a tap gesture is recognized.
@@ -250,7 +254,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 ///
 /// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, Gesturedeck will present a watermark. Defaults to <code>nil</code>.
 ///
 /// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
@@ -274,7 +278,8 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 
 @class GesturedeckMediaOverlay;
 
-/// A subclass of Gesturedeck that adds media-related gestures.
+/// A subclass of Gesturedeck that provides media-specific functionality such as volume control and media playback actions.
+/// Gesturedeck also includes support for media overlays, which can be used to display additional information or controls on top of the app’s content.
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
 /// The overlay view that displays media-related gestures.
@@ -293,7 +298,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 ///
 /// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
 ///
-/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, Gesturedeck will present a watermark. Defaults to <code>nil</code>.
 ///
 /// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
@@ -318,6 +323,8 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
 /// The tint color of the media overlay.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
+/// The background color of the media overlay
+@property (nonatomic, strong) UIColor * _Nullable overlayBackgroundColor;
 /// The top icon of the media overlay.
 @property (nonatomic, strong) UIImage * _Nullable topIcon;
 /// The icon for tapping on the media overlay.
@@ -335,6 +342,8 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
 /// \param tintColor The tint color of the media overlay.
 ///
+/// \param overlayBackgroundColor The background color of the media overlay
+///
 /// \param topIcon The top icon of the media overlay.
 ///
 /// \param iconTap The icon for tapping on the media overlay.
@@ -349,7 +358,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 ///
 /// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
 ///
-- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor overlayBackgroundColor:(UIColor * _Nullable)overlayBackgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -591,7 +600,11 @@ enum PanSensitivity : NSInteger;
 @class UIViewController;
 @class NSString;
 
-/// A class that provides gesture recognition functionality.
+/// This is the low-level API that allows you to build custom functionalities on top of Gesturedeck, with seamless callbacks for Gesturedeck’s gestures.
+/// The library provides callbacks for each gesture, allowing developers to perform custom actions in response to user input.
+/// It allows developers to easily add support for multi-finger and single-finger gestures such as taps, swipes, pans, and long presses to their apps, that are active on top of the entire UI and do not interfere with the apps’ UI elements.
+/// To use Gesturedeck, create an instance of the <code>Gesturedeck</code> class and pass in the required parameters. When a gesture is detected, the corresponding callback will be invoked.
+/// Gesturedeck requires an activation key to remove watermarks. The activation key can be obtained by contacting Navideck, the creators of Gesturedeck. The watermarked mode is available for free for developers who want to use it without setting an activation key.
 SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @interface Gesturedeck : NSObject
 /// A closure that is called when a tap gesture is recognized.
@@ -619,7 +632,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 ///
 /// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, Gesturedeck will present a watermark. Defaults to <code>nil</code>.
 ///
 /// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
@@ -643,7 +656,8 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 
 @class GesturedeckMediaOverlay;
 
-/// A subclass of Gesturedeck that adds media-related gestures.
+/// A subclass of Gesturedeck that provides media-specific functionality such as volume control and media playback actions.
+/// Gesturedeck also includes support for media overlays, which can be used to display additional information or controls on top of the app’s content.
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
 /// The overlay view that displays media-related gestures.
@@ -662,7 +676,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 ///
 /// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
 ///
-/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, Gesturedeck will present a watermark. Defaults to <code>nil</code>.
 ///
 /// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
@@ -687,6 +701,8 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
 /// The tint color of the media overlay.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
+/// The background color of the media overlay
+@property (nonatomic, strong) UIColor * _Nullable overlayBackgroundColor;
 /// The top icon of the media overlay.
 @property (nonatomic, strong) UIImage * _Nullable topIcon;
 /// The icon for tapping on the media overlay.
@@ -704,6 +720,8 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
 /// \param tintColor The tint color of the media overlay.
 ///
+/// \param overlayBackgroundColor The background color of the media overlay
+///
 /// \param topIcon The top icon of the media overlay.
 ///
 /// \param iconTap The icon for tapping on the media overlay.
@@ -718,7 +736,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 ///
 /// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
 ///
-- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor overlayBackgroundColor:(UIColor * _Nullable)overlayBackgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -960,7 +978,11 @@ enum PanSensitivity : NSInteger;
 @class UIViewController;
 @class NSString;
 
-/// A class that provides gesture recognition functionality.
+/// This is the low-level API that allows you to build custom functionalities on top of Gesturedeck, with seamless callbacks for Gesturedeck’s gestures.
+/// The library provides callbacks for each gesture, allowing developers to perform custom actions in response to user input.
+/// It allows developers to easily add support for multi-finger and single-finger gestures such as taps, swipes, pans, and long presses to their apps, that are active on top of the entire UI and do not interfere with the apps’ UI elements.
+/// To use Gesturedeck, create an instance of the <code>Gesturedeck</code> class and pass in the required parameters. When a gesture is detected, the corresponding callback will be invoked.
+/// Gesturedeck requires an activation key to remove watermarks. The activation key can be obtained by contacting Navideck, the creators of Gesturedeck. The watermarked mode is available for free for developers who want to use it without setting an activation key.
 SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 @interface Gesturedeck : NSObject
 /// A closure that is called when a tap gesture is recognized.
@@ -988,7 +1010,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 ///
 /// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, Gesturedeck will present a watermark. Defaults to <code>nil</code>.
 ///
 /// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
@@ -1012,7 +1034,8 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 
 @class GesturedeckMediaOverlay;
 
-/// A subclass of Gesturedeck that adds media-related gestures.
+/// A subclass of Gesturedeck that provides media-specific functionality such as volume control and media playback actions.
+/// Gesturedeck also includes support for media overlays, which can be used to display additional information or controls on top of the app’s content.
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
 /// The overlay view that displays media-related gestures.
@@ -1031,7 +1054,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 ///
 /// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
 ///
-/// \param activationKey An optional activation key to remove watermarks. If not provided, the Volumedeck will run in trial mode. Defaults to <code>nil</code>.
+/// \param activationKey An optional activation key to remove watermarks. If not provided, Gesturedeck will present a watermark. Defaults to <code>nil</code>.
 ///
 /// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
@@ -1056,6 +1079,8 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
 /// The tint color of the media overlay.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
+/// The background color of the media overlay
+@property (nonatomic, strong) UIColor * _Nullable overlayBackgroundColor;
 /// The top icon of the media overlay.
 @property (nonatomic, strong) UIImage * _Nullable topIcon;
 /// The icon for tapping on the media overlay.
@@ -1073,6 +1098,8 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
 /// \param tintColor The tint color of the media overlay.
 ///
+/// \param overlayBackgroundColor The background color of the media overlay
+///
 /// \param topIcon The top icon of the media overlay.
 ///
 /// \param iconTap The icon for tapping on the media overlay.
@@ -1087,7 +1114,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 ///
 /// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
 ///
-- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor overlayBackgroundColor:(UIColor * _Nullable)overlayBackgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

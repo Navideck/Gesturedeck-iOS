@@ -40,6 +40,7 @@ extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
 }
 @objc public class GesturedeckMediaOverlay : ObjectiveC.NSObject {
   @objc public var tintColor: UIKit.UIColor?
+  @objc public var overlayBackgroundColor: UIKit.UIColor?
   @objc public var topIcon: UIKit.UIImage?
   @objc public var iconTap: UIKit.UIImage?
   @objc public var iconTapToggled: UIKit.UIImage?
@@ -47,7 +48,7 @@ extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
   @objc public var iconSwipeRight: UIKit.UIImage?
   @objc public var reverseHorizontalSwipes: Swift.Bool
   @objc public var centerIconShowsOuterRing: Swift.Bool
-  @objc public init(tintColor: UIKit.UIColor? = nil, topIcon: UIKit.UIImage? = nil, iconTap: UIKit.UIImage? = nil, iconTapToggled: UIKit.UIImage? = nil, iconSwipeLeft: UIKit.UIImage? = nil, iconSwipeRight: UIKit.UIImage? = nil, reverseHorizontalSwipes: Swift.Bool = false, centerIconShowsOuterRing: Swift.Bool = true)
+  @objc public init(tintColor: UIKit.UIColor? = nil, overlayBackgroundColor: UIKit.UIColor? = nil, topIcon: UIKit.UIImage? = nil, iconTap: UIKit.UIImage? = nil, iconTapToggled: UIKit.UIImage? = nil, iconSwipeLeft: UIKit.UIImage? = nil, iconSwipeRight: UIKit.UIImage? = nil, reverseHorizontalSwipes: Swift.Bool = false, centerIconShowsOuterRing: Swift.Bool = true)
   @objc deinit
 }
 @objc @_Concurrency.MainActor(unsafe) public class GesturedeckMedia : GesturedeckiOS.Gesturedeck {
