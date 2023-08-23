@@ -324,7 +324,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// The tint color of the media overlay.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
 /// The background color of the media overlay
-@property (nonatomic, strong) UIColor * _Nullable overlayBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The top icon of the media overlay.
 @property (nonatomic, strong) UIImage * _Nullable topIcon;
 /// The icon for tapping on the media overlay.
@@ -342,7 +342,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
 /// \param tintColor The tint color of the media overlay.
 ///
-/// \param overlayBackgroundColor The background color of the media overlay
+/// \param backgroundColor The background color of the media overlay
 ///
 /// \param topIcon The top icon of the media overlay.
 ///
@@ -358,7 +358,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 ///
 /// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
 ///
-- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor overlayBackgroundColor:(UIColor * _Nullable)overlayBackgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor backgroundColor:(UIColor * _Nullable)backgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -702,7 +702,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// The tint color of the media overlay.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
 /// The background color of the media overlay
-@property (nonatomic, strong) UIColor * _Nullable overlayBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The top icon of the media overlay.
 @property (nonatomic, strong) UIImage * _Nullable topIcon;
 /// The icon for tapping on the media overlay.
@@ -720,7 +720,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
 /// \param tintColor The tint color of the media overlay.
 ///
-/// \param overlayBackgroundColor The background color of the media overlay
+/// \param backgroundColor The background color of the media overlay
 ///
 /// \param topIcon The top icon of the media overlay.
 ///
@@ -736,7 +736,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 ///
 /// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
 ///
-- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor overlayBackgroundColor:(UIColor * _Nullable)overlayBackgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor backgroundColor:(UIColor * _Nullable)backgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1080,7 +1080,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// The tint color of the media overlay.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
 /// The background color of the media overlay
-@property (nonatomic, strong) UIColor * _Nullable overlayBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The top icon of the media overlay.
 @property (nonatomic, strong) UIImage * _Nullable topIcon;
 /// The icon for tapping on the media overlay.
@@ -1098,7 +1098,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
 /// \param tintColor The tint color of the media overlay.
 ///
-/// \param overlayBackgroundColor The background color of the media overlay
+/// \param backgroundColor The background color of the media overlay
 ///
 /// \param topIcon The top icon of the media overlay.
 ///
@@ -1114,7 +1114,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 ///
 /// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
 ///
-- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor overlayBackgroundColor:(UIColor * _Nullable)overlayBackgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor backgroundColor:(UIColor * _Nullable)backgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1458,7 +1458,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// The tint color of the media overlay.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
 /// The background color of the media overlay
-@property (nonatomic, strong) UIColor * _Nullable overlayBackgroundColor;
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The top icon of the media overlay.
 @property (nonatomic, strong) UIImage * _Nullable topIcon;
 /// The icon for tapping on the media overlay.
@@ -1476,7 +1476,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 /// Initializes a new instance of the <code>GesturedeckMediaOverlay</code> struct.
 /// \param tintColor The tint color of the media overlay.
 ///
-/// \param overlayBackgroundColor The background color of the media overlay
+/// \param backgroundColor The background color of the media overlay
 ///
 /// \param topIcon The top icon of the media overlay.
 ///
@@ -1492,7 +1492,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 ///
 /// \param centerIconShowsOuterRing A Boolean value that determines whether the center icon shows the outer ring.
 ///
-- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor overlayBackgroundColor:(UIColor * _Nullable)overlayBackgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTintColor:(UIColor * _Nullable)tintColor backgroundColor:(UIColor * _Nullable)backgroundColor topIcon:(UIImage * _Nullable)topIcon iconTap:(UIImage * _Nullable)iconTap iconTapToggled:(UIImage * _Nullable)iconTapToggled iconSwipeLeft:(UIImage * _Nullable)iconSwipeLeft iconSwipeRight:(UIImage * _Nullable)iconSwipeRight reverseHorizontalSwipes:(BOOL)reverseHorizontalSwipes centerIconShowsOuterRing:(BOOL)centerIconShowsOuterRing OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
