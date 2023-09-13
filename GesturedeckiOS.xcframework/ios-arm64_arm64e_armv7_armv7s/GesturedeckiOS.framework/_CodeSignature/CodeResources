@@ -26,59 +26,59 @@
 		</data>
 		<key>Headers/GesturedeckiOS-Swift.h</key>
 		<data>
-		WlZQGSbJ2TUcFX0ruGVr/ZOTwwk=
+		/6LsejzTrZ/W0omMh0afQK9LF/Y=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ChHqKAb69iiF1g2kGLMj244W6N8=
+		RPQp3LEOrhBgHbehUAHEnN3O4Y0=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ctGi8rR0dC0rcVCTZjjQae5+ugU=
+		HE4rTN00dr7mc6dbk2eRuyQIawU=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		zfbUdY8kUaOEukwNcxMB73vLMSc=
+		adMHHEec6bRtIv0BHDcjS6wtyr8=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		uSenM3td1x7W2zgE+7ZD9q9fvAc=
+		gga8RzIPYI6/IRw0z49SGpg2dU4=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios.swiftdoc</key>
 		<data>
-		L8Jwj3fwlGQ9jHqMNyjaoH6VUEc=
+		QYdbZELpgt4LwCnTMqJ2TRHX/V4=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios.swiftinterface</key>
 		<data>
-		vQ64sAItwUEfZq6gREVo7XLXu8w=
+		5EP3WWB0I0I8Af11L3R9TPK6Tu4=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios.swiftmodule</key>
 		<data>
-		sEYtkLl8R3WFJmc2W81ZrDOXWRM=
+		bODj6ieaYbmGWHSNcgXYfWMkU2Y=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		XJsaSlBZy3q3fTY2BjJ5WviF0Bo=
+		PjgODKLUNJUV8T6sPVsEvlAK/zw=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		mk+dDVuCs1Ty0WwdNJ9+WmwdUvc=
+		My7pTrlzlykt41qiXM4Cf2YPIxQ=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		GYdrCcYULv8WFlFrLUmgx3Vi6tw=
+		kY47s29jaFYKWKU467Llj5z1yIs=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7s-apple-ios.swiftdoc</key>
 		<data>
-		QlAd7VcFc1uwT2yLG+HJNdUrj5o=
+		9aWJUSN7krXESyZ6Ok506ecshRI=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7s-apple-ios.swiftinterface</key>
 		<data>
-		5MiAIzCAloHV8vQXvc01scze5JQ=
+		iWFKiyU+eio/nvndt5ERLBazyjQ=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7s-apple-ios.swiftmodule</key>
 		<data>
-		ML5y2Kdwnt1Kwy+m7LulFzKsZUQ=
+		U3h/efovWL+3flnJrGWgGXQiSRA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -146,143 +146,143 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WlZQGSbJ2TUcFX0ruGVr/ZOTwwk=
+			/6LsejzTrZ/W0omMh0afQK9LF/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			easiN+nsGuWjcyI9TEyC1ZN7TLrp6THBFiB5ZPvK1W8=
+			mH625uQCVVkq4Q+ExKpJV6KXh9d1UvFm+GuLCz63uYI=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ctGi8rR0dC0rcVCTZjjQae5+ugU=
+			HE4rTN00dr7mc6dbk2eRuyQIawU=
 			</data>
 			<key>hash2</key>
 			<data>
-			xfJadZnVmBV4kBY3Kyltk7UqJXasd17HvjQNsnKNcD8=
+			DtJkqwjCO7Ln58mIz0BEBB0kYLg1kw2uRZ3r/BL9SDA=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zfbUdY8kUaOEukwNcxMB73vLMSc=
+			adMHHEec6bRtIv0BHDcjS6wtyr8=
 			</data>
 			<key>hash2</key>
 			<data>
-			DB5EnlZVNZlHrAFWWOAD28ZfP0Q/wW6lcBXb3u8Ijdg=
+			jdBOG6oq8Y7G92UIwSzTb1rXt9r1LN/vc8N4NylTNx0=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uSenM3td1x7W2zgE+7ZD9q9fvAc=
+			gga8RzIPYI6/IRw0z49SGpg2dU4=
 			</data>
 			<key>hash2</key>
 			<data>
-			4W7O6429bXnTWp9O4wAueZ8zyhMvpKFJoJfYwylUA9g=
+			FtTKVzNq4mwrP8vbbFuTe2NfiV6r2l62ZkXMKot+16M=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L8Jwj3fwlGQ9jHqMNyjaoH6VUEc=
+			QYdbZELpgt4LwCnTMqJ2TRHX/V4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Th4sNPV9JIsDD2b25k0dQ8J4wYLZF/2d578Q0mlTu3M=
+			dvtHmclzZGSAHOiecdYbgTgCsyPmvmS/8ECic6Lvabc=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vQ64sAItwUEfZq6gREVo7XLXu8w=
+			5EP3WWB0I0I8Af11L3R9TPK6Tu4=
 			</data>
 			<key>hash2</key>
 			<data>
-			c/zRKW7nrtUpsJ/C5Oq/i65KakBwOj4matR90mVvbJA=
+			1BljAmOhO3E1HBQATDD+4hSt5HB/14IBAYvMLeLU0Jg=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sEYtkLl8R3WFJmc2W81ZrDOXWRM=
+			bODj6ieaYbmGWHSNcgXYfWMkU2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			F72ZDavBs/hV5m7LBADTqvjm9INHkKhXCzmDiClR1vA=
+			FJ0zjdA/RyBJ1ZF4ICqIi03QTk9XEFpvN5I8Qqayfls=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XJsaSlBZy3q3fTY2BjJ5WviF0Bo=
+			PjgODKLUNJUV8T6sPVsEvlAK/zw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z1DgYgrMQ+D++rfUnyV35MKo6Wb+RIFEpJORifRZL+8=
+			6+H2NIii+rFpM62DVA/ihiFLDDotqZj72lmV/k5p+XE=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mk+dDVuCs1Ty0WwdNJ9+WmwdUvc=
+			My7pTrlzlykt41qiXM4Cf2YPIxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			OqyGKJ8UVpJZ6JjB3j3U36g4jUpM8tc1ivcMzu5zmU4=
+			mfFJDb6VclGzq+cTNrV1R/C3/o4+rtScEIOTk7+Rp6Q=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GYdrCcYULv8WFlFrLUmgx3Vi6tw=
+			kY47s29jaFYKWKU467Llj5z1yIs=
 			</data>
 			<key>hash2</key>
 			<data>
-			XJLyCGcDfRVGFdmvqxsXw9axIiS/G10ZPIhu7sw9g9g=
+			j/uOnU04HwKhtOcME2GkEkE+oLl2UPXRCkSFZebYRmE=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7s-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QlAd7VcFc1uwT2yLG+HJNdUrj5o=
+			9aWJUSN7krXESyZ6Ok506ecshRI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3OaFEbG+0Kajjq5AUer5zlYl4j8Oryoaeb1EqTrX1/k=
+			3Q30KtBqXqkxqxz8/yJVl+ed7fcDqHd3kSy+iIKQoGc=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7s-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5MiAIzCAloHV8vQXvc01scze5JQ=
+			iWFKiyU+eio/nvndt5ERLBazyjQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			pF/OPyme1ZJbtaiyzoSvTF2hm+obqd2K9Gdzm9U4c6o=
+			D7e9gmZNBiDpQVrO9E0fTwPPBRJ9XaK58y1Xk4tFTsc=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/armv7s-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ML5y2Kdwnt1Kwy+m7LulFzKsZUQ=
+			U3h/efovWL+3flnJrGWgGXQiSRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			XkxmvY4sqNrL818AWpobV/1c/Eo8ztITZfE47+Zd+5w=
+			lGWngc54AtwNIyEGSF41GnWbD0UNoh7VlIsVmlCarvI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

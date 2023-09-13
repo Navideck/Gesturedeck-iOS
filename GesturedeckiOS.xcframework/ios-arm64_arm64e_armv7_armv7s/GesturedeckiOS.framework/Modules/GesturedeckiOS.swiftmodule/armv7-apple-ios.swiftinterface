@@ -15,7 +15,7 @@ import _Concurrency
   @objc public var panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)?
   @objc public var panSensitivity: GesturedeckiOS.PanSensitivity
   @objc public var longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)?
-  @objc public init(on hostViewController: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = nil, swipeLeftAction: (() -> Swift.Void)? = nil, swipeRightAction: (() -> Swift.Void)? = nil, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, activationKey: Swift.String? = nil, autoStart: Swift.Bool = true, panSensitivity: GesturedeckiOS.PanSensitivity = .medium)
+  @objc public init(on hostViewController: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = nil, swipeLeftAction: (() -> Swift.Void)? = nil, swipeRightAction: (() -> Swift.Void)? = nil, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, panSensitivity: GesturedeckiOS.PanSensitivity = .medium, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, autoStart: Swift.Bool = true, activationKey: Swift.String? = nil)
   @objc convenience override dynamic public init()
   @objc public func start()
   @objc public func stop()
@@ -74,7 +74,7 @@ extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
             if MPMusicPlayerController.systemMusicPlayer.playbackState == .playing {
                 MPMusicPlayerController.systemMusicPlayer.skipToNextItem()
             }
-        }, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, activationKey: Swift.String? = nil, autoStart: Swift.Bool = true, gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay? = nil, panSensitivity: GesturedeckiOS.PanSensitivity = .medium)
+        }, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, panSensitivity: GesturedeckiOS.PanSensitivity = .medium, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, autoStart: Swift.Bool = true, gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay? = nil, activationKey: Swift.String? = nil)
   @objc convenience dynamic public init()
   @objc override public func start()
   @objc override public func stop()
