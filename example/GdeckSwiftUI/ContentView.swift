@@ -35,7 +35,7 @@ struct ContentView: View {
                 }.padding(10)
 
                 VStack {
-                    Text("GestureEvent: \(controller.gestureEvent)")
+                    Text("Perform Gestures")
                 }.frame(
                     maxWidth: .infinity,
                     maxHeight: .infinity
@@ -47,33 +47,14 @@ struct ContentView: View {
 }
 
 @MainActor class ContentViewController: ObservableObject {
-    @Published var gestureEvent = ""
-    var gesturedeckMedia: GesturedeckMedia? = nil
-
-    init() {
-        gesturedeckMedia = GesturedeckMedia(
-            tapAction: {
-                self.gestureEvent = "tapAction"
-            },
-            swipeLeftAction: {
-                self.gestureEvent = "swipeLeftAction"
-            },
-            swipeRightAction: {
-                self.gestureEvent = "swipeRightAction"
-            },
-            panAction: { _ in
-                self.gestureEvent = "panAction"
-            },
-            autoStart: true
-        )
-    }
+    var gesturedeckMedia: GesturedeckMedia = GesturedeckMedia()
 
     func onStartTap() {
-        gesturedeckMedia?.start()
+        gesturedeckMedia.start()
     }
 
     func onStopTap() {
-        gesturedeckMedia?.stop()
+        gesturedeckMedia.stop()
     }
 }
 

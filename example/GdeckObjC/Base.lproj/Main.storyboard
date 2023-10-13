@@ -33,17 +33,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Start"/>
-                                        <connections>
-                                            <action selector="btnStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhU-pq-vta"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXD-SP-rII">
                                         <rect key="frame" x="206.66666666666663" y="0.0" width="166.33333333333337" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Stop"/>
-                                        <connections>
-                                            <action selector="btnStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWT-ww-F9C"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -61,7 +55,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZgI-WI-9IS">
                                 <rect key="frame" x="0.0" y="173" width="393" height="645"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture Event:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXW-24-v9X">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perform Gestures" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXW-24-v9X">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="645"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>

@@ -54,7 +54,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tRp-tS-ypt">
                                 <rect key="frame" x="0.0" y="173" width="393" height="596"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture Event:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-fd-Jca">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perform Gestures" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-fd-Jca">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="596"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -91,9 +91,8 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="btnStart" destination="jNE-L6-QGu" id="If2-My-IDf"/>
-                        <outlet property="btnStop" destination="LzG-d9-vEb" id="lhE-hH-yh1"/>
-                        <outlet property="txtGestureEvent" destination="hbj-fd-Jca" id="Qws-gW-fkJ"/>
+                        <outlet property="btnStart" destination="jNE-L6-QGu" id="5CY-X1-Kas"/>
+                        <outlet property="btnStop" destination="LzG-d9-vEb" id="fOR-ed-rW1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

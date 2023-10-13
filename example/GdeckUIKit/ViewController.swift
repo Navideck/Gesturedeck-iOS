@@ -18,13 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
-        sceneDelegate?.gestureEventListener = gestureEventListener
         btnStart.addTarget(self, action: #selector(onStartButtonTap(_:)), for: .touchUpInside)
         btnStop.addTarget(self, action: #selector(onStopButtonTap(_:)), for: .touchUpInside)
-    }
-
-    func gestureEventListener(event: String) {
-        txtGestureEvent.text = "Gesture Event: \(event)"
     }
 
     @IBAction func onStartButtonTap(_: UIButton) {
