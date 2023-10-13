@@ -5,7 +5,6 @@
 //  Created by Rohit Sangwan on 13/10/23.
 //
 
-import GesturedeckiOS
 import UIKit
 
 @main

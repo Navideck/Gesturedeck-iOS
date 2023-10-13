@@ -24,9 +24,15 @@
     [self.btnStop addTarget:self action:@selector(onStopButtonTap:) forControlEvents:UIControlEventTouchUpInside];
 
     self.gesturedeckMedia = [[GesturedeckMedia alloc] init];
-    [self.gesturedeckMedia setTapAction:^{
-        self.txtGestureEvent.text = @"Gesture Event: tapAction";
+    
+    __weak typeof(self) weakSelf = self;
+    [self.gesturedeckMedia setTapAction: ^{
+        weakSelf.txtGestureEvent.text = @"Gesture Event: tapAction";
     }];
+    
+    self.gesturedeckMedia.tapAction = ^{
+        weakSelf.txtGestureEvent.text = @"Gesture Event: tapAction";
+    };
 }
 
 - (IBAction)onStartButtonTap:(UIButton *)sender {
