@@ -23,11 +23,11 @@
     self.gesturedeckMedia = [[GesturedeckMedia alloc] init];
 }
 
-//- (IBAction)onStartButtonTap:(UIButton *)sender {
-//    [self.gesturedeckMedia start];
-//}
-//
-//- (IBAction)onStopButtonTap:(UIButton *)sender {
-//    [self.gesturedeckMedia stop];
-//}
+- (IBAction)onStartButtonTap:(UIButton *)sender {
+    [self.gesturedeckMedia start];
+}
+
+- (IBAction)onStopButtonTap:(UIButton *)sender {
+    [self.gesturedeckMedia stop];
+}
 @end
