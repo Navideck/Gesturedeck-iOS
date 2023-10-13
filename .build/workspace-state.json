@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "public",
+          "kind" : "root",
+          "location" : "/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_ios/public",
+          "name" : "public"
+        },
+        "path" : "/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_ios/public/GesturedeckiOS.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "GesturedeckiOS"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}

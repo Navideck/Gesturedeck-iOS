@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F735B5CD2AD932B3003DE38F /* GdeckSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735B5CC2AD932B3003DE38F /* GdeckSwiftUIApp.swift */; };
+		F735B5CF2AD932B3003DE38F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735B5CE2AD932B3003DE38F /* ContentView.swift */; };
+		F735B5D12AD932BA003DE38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F735B5D02AD932BA003DE38F /* Assets.xcassets */; };
+		F735B5D42AD932BA003DE38F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F735B5D32AD932BA003DE38F /* Preview Assets.xcassets */; };
+		F735B5DF2AD93336003DE38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735B5DE2AD93336003DE38F /* AppDelegate.swift */; };
+		F735B5E12AD93336003DE38F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735B5E02AD93336003DE38F /* SceneDelegate.swift */; };
+		F735B5E32AD93336003DE38F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735B5E22AD93336003DE38F /* ViewController.swift */; };
+		F735B5E62AD93337003DE38F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735B5E42AD93336003DE38F /* Main.storyboard */; };
+		F735B5E82AD9333E003DE38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F735B5E72AD9333E003DE38F /* Assets.xcassets */; };
+		F735B5EB2AD9333E003DE38F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735B5E92AD9333E003DE38F /* LaunchScreen.storyboard */; };
+		F735B5F82AD9335F003DE38F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F735B5F72AD9335F003DE38F /* AppDelegate.m */; };
+		F735B5FB2AD9335F003DE38F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F735B5FA2AD9335F003DE38F /* SceneDelegate.m */; };
+		F735B5FE2AD9335F003DE38F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F735B5FD2AD9335F003DE38F /* ViewController.m */; };
+		F735B6012AD9335F003DE38F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735B5FF2AD9335F003DE38F /* Main.storyboard */; };
+		F735B6032AD93364003DE38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F735B6022AD93364003DE38F /* Assets.xcassets */; };
+		F735B6062AD93364003DE38F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735B6042AD93364003DE38F /* LaunchScreen.storyboard */; };
+		F735B6092AD93364003DE38F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F735B6082AD93364003DE38F /* main.m */; };
+		F735B6122AD9354E003DE38F /* Gesturedeck in Frameworks */ = {isa = PBXBuildFile; productRef = F735B6112AD9354E003DE38F /* Gesturedeck */; };
+		F735B6142AD9355F003DE38F /* Gesturedeck in Frameworks */ = {isa = PBXBuildFile; productRef = F735B6132AD9355F003DE38F /* Gesturedeck */; };
+		F735B6162AD93564003DE38F /* Gesturedeck in Frameworks */ = {isa = PBXBuildFile; productRef = F735B6152AD93564003DE38F /* Gesturedeck */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F735B6102AD933D5003DE38F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F735B5CA2AD932B3003DE38F /* GdeckSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdeckSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F735B5CC2AD932B3003DE38F /* GdeckSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GdeckSwiftUIApp.swift; sourceTree = "<group>"; };
+		F735B5CE2AD932B3003DE38F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F735B5D02AD932BA003DE38F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F735B5D32AD932BA003DE38F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F735B5DC2AD93336003DE38F /* GdeckUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdeckUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F735B5DE2AD93336003DE38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F735B5E02AD93336003DE38F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F735B5E22AD93336003DE38F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F735B5E52AD93337003DE38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F735B5E72AD9333E003DE38F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F735B5EA2AD9333E003DE38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F735B5EC2AD9333E003DE38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F735B5F42AD9335F003DE38F /* GdeckObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdeckObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F735B5F62AD9335F003DE38F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F735B5F72AD9335F003DE38F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F735B5F92AD9335F003DE38F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F735B5FA2AD9335F003DE38F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F735B5FC2AD9335F003DE38F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F735B5FD2AD9335F003DE38F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F735B6002AD9335F003DE38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F735B6022AD93364003DE38F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F735B6052AD93364003DE38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F735B6072AD93364003DE38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F735B6082AD93364003DE38F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F735B5C72AD932B3003DE38F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F735B6122AD9354E003DE38F /* Gesturedeck in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F735B5D92AD93336003DE38F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F735B6142AD9355F003DE38F /* Gesturedeck in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F735B5F12AD9335E003DE38F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F735B6162AD93564003DE38F /* Gesturedeck in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F735B5992AD9063A003DE38F = {
+			isa = PBXGroup;
+			children = (
+				F735B5CB2AD932B3003DE38F /* GdeckSwiftUI */,
+				F735B5DD2AD93336003DE38F /* GdeckUIKit */,
+				F735B5F52AD9335F003DE38F /* GdeckObjC */,
+				F735B5A32AD9063A003DE38F /* Products */,
+				F735B5BF2AD90EB5003DE38F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F735B5A32AD9063A003DE38F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F735B5CA2AD932B3003DE38F /* GdeckSwiftUI.app */,
+				F735B5DC2AD93336003DE38F /* GdeckUIKit.app */,
+				F735B5F42AD9335F003DE38F /* GdeckObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F735B5BF2AD90EB5003DE38F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F735B5CB2AD932B3003DE38F /* GdeckSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F735B5CC2AD932B3003DE38F /* GdeckSwiftUIApp.swift */,
+				F735B5CE2AD932B3003DE38F /* ContentView.swift */,
+				F735B5D02AD932BA003DE38F /* Assets.xcassets */,
+				F735B5D22AD932BA003DE38F /* Preview Content */,
+			);
+			path = GdeckSwiftUI;
+			sourceTree = "<group>";
+		};
+		F735B5D22AD932BA003DE38F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F735B5D32AD932BA003DE38F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F735B5DD2AD93336003DE38F /* GdeckUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F735B5DE2AD93336003DE38F /* AppDelegate.swift */,
+				F735B5E02AD93336003DE38F /* SceneDelegate.swift */,
+				F735B5E22AD93336003DE38F /* ViewController.swift */,
+				F735B5E42AD93336003DE38F /* Main.storyboard */,
+				F735B5E72AD9333E003DE38F /* Assets.xcassets */,
+				F735B5E92AD9333E003DE38F /* LaunchScreen.storyboard */,
+				F735B5EC2AD9333E003DE38F /* Info.plist */,
+			);
+			path = GdeckUIKit;
+			sourceTree = "<group>";
+		};
+		F735B5F52AD9335F003DE38F /* GdeckObjC */ = {
+			isa = PBXGroup;
+			children = (
+				F735B5F62AD9335F003DE38F /* AppDelegate.h */,
+				F735B5F72AD9335F003DE38F /* AppDelegate.m */,
+				F735B5F92AD9335F003DE38F /* SceneDelegate.h */,
+				F735B5FA2AD9335F003DE38F /* SceneDelegate.m */,
+				F735B5FC2AD9335F003DE38F /* ViewController.h */,
+				F735B5FD2AD9335F003DE38F /* ViewController.m */,
+				F735B5FF2AD9335F003DE38F /* Main.storyboard */,
+				F735B6022AD93364003DE38F /* Assets.xcassets */,
+				F735B6042AD93364003DE38F /* LaunchScreen.storyboard */,
+				F735B6072AD93364003DE38F /* Info.plist */,
+				F735B6082AD93364003DE38F /* main.m */,
+			);
+			path = GdeckObjC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F735B5C92AD932B3003DE38F /* GdeckSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F735B5D52AD932BA003DE38F /* Build configuration list for PBXNativeTarget "GdeckSwiftUI" */;
+			buildPhases = (
+				F735B5C62AD932B3003DE38F /* Sources */,
+				F735B5C72AD932B3003DE38F /* Frameworks */,
+				F735B5C82AD932B3003DE38F /* Resources */,
+				F735B6102AD933D5003DE38F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GdeckSwiftUI;
+			packageProductDependencies = (
+				F735B6112AD9354E003DE38F /* Gesturedeck */,
+			);
+			productName = GdeckSwiftUI;
+			productReference = F735B5CA2AD932B3003DE38F /* GdeckSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F735B5DB2AD93336003DE38F /* GdeckUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F735B5ED2AD9333E003DE38F /* Build configuration list for PBXNativeTarget "GdeckUIKit" */;
+			buildPhases = (
+				F735B5D82AD93336003DE38F /* Sources */,
+				F735B5D92AD93336003DE38F /* Frameworks */,
+				F735B5DA2AD93336003DE38F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GdeckUIKit;
+			packageProductDependencies = (
+				F735B6132AD9355F003DE38F /* Gesturedeck */,
+			);
+			productName = GdeckUIKit;
+			productReference = F735B5DC2AD93336003DE38F /* GdeckUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F735B5F32AD9335E003DE38F /* GdeckObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F735B60A2AD93364003DE38F /* Build configuration list for PBXNativeTarget "GdeckObjC" */;
+			buildPhases = (
+				F735B5F02AD9335E003DE38F /* Sources */,
+				F735B5F12AD9335E003DE38F /* Frameworks */,
+				F735B5F22AD9335E003DE38F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GdeckObjC;
+			packageProductDependencies = (
+				F735B6152AD93564003DE38F /* Gesturedeck */,
+			);
+			productName = GdeckObjC;
+			productReference = F735B5F42AD9335F003DE38F /* GdeckObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F735B59A2AD9063A003DE38F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F735B5C92AD932B3003DE38F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					F735B5DB2AD93336003DE38F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					F735B5F32AD9335E003DE38F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F735B59D2AD9063A003DE38F /* Build configuration list for PBXProject "GesturedeckExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F735B5992AD9063A003DE38F;
+			packageReferences = (
+				F735B5C32AD931D6003DE38F /* XCRemoteSwiftPackageReference "Gesturedeck-iOS" */,
+			);
+			productRefGroup = F735B5A32AD9063A003DE38F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F735B5C92AD932B3003DE38F /* GdeckSwiftUI */,
+				F735B5DB2AD93336003DE38F /* GdeckUIKit */,
+				F735B5F32AD9335E003DE38F /* GdeckObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F735B5C82AD932B3003DE38F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F735B5D42AD932BA003DE38F /* Preview Assets.xcassets in Resources */,
+				F735B5D12AD932BA003DE38F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F735B5DA2AD93336003DE38F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F735B5EB2AD9333E003DE38F /* LaunchScreen.storyboard in Resources */,
+				F735B5E82AD9333E003DE38F /* Assets.xcassets in Resources */,
+				F735B5E62AD93337003DE38F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F735B5F22AD9335E003DE38F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F735B6062AD93364003DE38F /* LaunchScreen.storyboard in Resources */,
+				F735B6032AD93364003DE38F /* Assets.xcassets in Resources */,
+				F735B6012AD9335F003DE38F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F735B5C62AD932B3003DE38F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F735B5CF2AD932B3003DE38F /* ContentView.swift in Sources */,
+				F735B5CD2AD932B3003DE38F /* GdeckSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F735B5D82AD93336003DE38F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F735B5E32AD93336003DE38F /* ViewController.swift in Sources */,
+				F735B5DF2AD93336003DE38F /* AppDelegate.swift in Sources */,
+				F735B5E12AD93336003DE38F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F735B5F02AD9335E003DE38F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F735B5FE2AD9335F003DE38F /* ViewController.m in Sources */,
+				F735B5F82AD9335F003DE38F /* AppDelegate.m in Sources */,
+				F735B6092AD93364003DE38F /* main.m in Sources */,
+				F735B5FB2AD9335F003DE38F /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F735B5E42AD93336003DE38F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F735B5E52AD93337003DE38F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F735B5E92AD9333E003DE38F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F735B5EA2AD9333E003DE38F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F735B5FF2AD9335F003DE38F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F735B6002AD9335F003DE38F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F735B6042AD93364003DE38F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F735B6052AD93364003DE38F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F735B5AE2AD9063B003DE38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F735B5AF2AD9063B003DE38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F735B5D62AD932BA003DE38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GdeckSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = QQAZR43YM7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navideck.GesturedeckExample.GdeckSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F735B5D72AD932BA003DE38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GdeckSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = QQAZR43YM7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navideck.GesturedeckExample.GdeckSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F735B5EE2AD9333E003DE38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQAZR43YM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GdeckUIKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navideck.GesturedeckExample.GdeckUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F735B5EF2AD9333E003DE38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQAZR43YM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GdeckUIKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navideck.GesturedeckExample.GdeckUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F735B60B2AD93364003DE38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQAZR43YM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GdeckObjC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navideck.GesturedeckExample.GdeckObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F735B60C2AD93364003DE38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQAZR43YM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GdeckObjC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.navideck.GesturedeckExample.GdeckObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F735B59D2AD9063A003DE38F /* Build configuration list for PBXProject "GesturedeckExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F735B5AE2AD9063B003DE38F /* Debug */,
+				F735B5AF2AD9063B003DE38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F735B5D52AD932BA003DE38F /* Build configuration list for PBXNativeTarget "GdeckSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F735B5D62AD932BA003DE38F /* Debug */,
+				F735B5D72AD932BA003DE38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F735B5ED2AD9333E003DE38F /* Build configuration list for PBXNativeTarget "GdeckUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F735B5EE2AD9333E003DE38F /* Debug */,
+				F735B5EF2AD9333E003DE38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F735B60A2AD93364003DE38F /* Build configuration list for PBXNativeTarget "GdeckObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F735B60B2AD93364003DE38F /* Debug */,
+				F735B60C2AD93364003DE38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F735B5C32AD931D6003DE38F /* XCRemoteSwiftPackageReference "Gesturedeck-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Navideck/Gesturedeck-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F735B6112AD9354E003DE38F /* Gesturedeck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F735B5C32AD931D6003DE38F /* XCRemoteSwiftPackageReference "Gesturedeck-iOS" */;
+			productName = Gesturedeck;
+		};
+		F735B6132AD9355F003DE38F /* Gesturedeck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F735B5C32AD931D6003DE38F /* XCRemoteSwiftPackageReference "Gesturedeck-iOS" */;
+			productName = Gesturedeck;
+		};
+		F735B6152AD93564003DE38F /* Gesturedeck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F735B5C32AD931D6003DE38F /* XCRemoteSwiftPackageReference "Gesturedeck-iOS" */;
+			productName = Gesturedeck;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F735B59A2AD9063A003DE38F /* Project object */;
+}

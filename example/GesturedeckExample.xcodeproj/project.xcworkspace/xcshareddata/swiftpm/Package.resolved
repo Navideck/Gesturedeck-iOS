@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "gesturedeck-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Navideck/Gesturedeck-iOS",
+      "state" : {
+        "revision" : "39cf2e782f195a1e15767a85273aeac7ffc12e15",
+        "version" : "1.4.1"
+      }
+    }
+  ],
+  "version" : 2
+}
