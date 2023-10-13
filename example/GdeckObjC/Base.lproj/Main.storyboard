@@ -89,6 +89,10 @@
                             <constraint firstItem="shf-p4-1tW" firstAttribute="top" secondItem="WFZ-iy-P2G" secondAttribute="bottom" constant="21.670000000000002" id="zru-NN-IdD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnStart" destination="ypy-rt-nGB" id="aAE-al-suz"/>
+                        <outlet property="btnStop" destination="sXD-SP-rII" id="kbY-jQ-eX1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
