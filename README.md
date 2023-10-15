@@ -48,24 +48,42 @@ import GesturedeckiOS
 
 Select one of the following options based on your app's setup:
 
-##### Option 1: Using AppDelegate
+##### Option 1: SwiftUI
 
-It is recommended to initialize the SDK in the `applicationDidBecomeActive` or later event, as the window might not be initialized in the `didFinishLaunchingWithOptions` lifecycle event. Make sure that you avoid initializing Gesturedeck multiple times.
+If you're using SwiftUI, there is no need for AppDelegate or SceneDelegate.
 
 ```swift
-class AppDelegate: UIResponder, UIApplicationDelegate {
+@main
+struct gesturedeckApp: App {
+    @Environment(\.scenePhase) var scenePhase
+    @State var gesturedeck: Gesturedeck?
+```
 
-  var window: UIWindow?
-  var gesturedeck: Gesturedeck?
+```swift
+var body: some Scene {
+    WindowGroup {
+        ...
+    }
+    .onChange(of: scenePhase) { oldValue, newValue in
+        if newValue == .active {
+            gesturedeck = gesturedeck ?? Gesturedeck()
+            gesturedeck?.tapAction = {
+                print("Tapped")
+            }
 
-  func applicationDidBecomeActive(_ application: UIApplication) {
-    // Initialize Gesturedeck
-    gesturedeck = gesturedeck ?? Gesturedeck()
-  }
+            gesturedeck?.swipeLeftAction = {
+                print("Swiped Left")
+            }
+
+            gesturedeck?.swipeRightAction = {
+                print("Swiped Right")
+            }
+        }
+    }
 }
 ```
 
-##### Option 2: Using SceneDelegate
+##### Option 2: UIKit / SceneDelegate
 
 Initialize the SDK in the `sceneDidBecomeActive` event or later. Make sure that you avoid initializing Gesturedeck multiple times.
 
@@ -97,38 +115,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-##### Option 3: SwiftUI Integration
+##### Option 3: UIKit / AppDelegate
 
-If you're using SwiftUI, there is no need for AppDelegate or SceneDelegate.
-
-```swift
-@main
-struct gesturedeckApp: App {
-    @Environment(\.scenePhase) var scenePhase
-    @State var gesturedeck: Gesturedeck?
-```
+It is recommended to initialize the SDK in the `applicationDidBecomeActive` or later event, as the window might not be initialized in the `didFinishLaunchingWithOptions` lifecycle event. Make sure that you avoid initializing Gesturedeck multiple times.
 
 ```swift
-var body: some Scene {
-    WindowGroup {
-        ...
-    }
-    .onChange(of: scenePhase) { phase in
-        if phase == .active {
-            gesturedeck = gesturedeck ?? Gesturedeck()
-            gesturedeck?.tapAction = {
-                print("Tapped")
-            }
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
-            gesturedeck?.swipeLeftAction = {
-                print("Swiped Left")
-            }
+  var window: UIWindow?
+  var gesturedeck: Gesturedeck?
 
-            gesturedeck?.swipeRightAction = {
-                print("Swiped Right")
-            }
-        }
-    }
+  func applicationDidBecomeActive(_ application: UIApplication) {
+    // Initialize Gesturedeck
+    gesturedeck = gesturedeck ?? Gesturedeck()
+  }
 }
 ```
 
@@ -168,7 +168,6 @@ or initialize `GesturedeckMedia` with `GesturedeckMediaOverlay` and actions:
 let gesturedeckMedia = GesturedeckMedia(
     context: self,
     gesturedeckMediaOverlay: GesturedeckMediaOverlay(
-        tintColor: UIColor(red: 28.0 / 255, green: 30.0 / 255, blue: 57.0 / 255, alpha: 0.9),
         topIcon: YOUR_TOP_ICON,
         iconTap: YOUR_ICON_TAP,
         iconTapToggled: YOUR_ICON_TAP_TOGGLED,
