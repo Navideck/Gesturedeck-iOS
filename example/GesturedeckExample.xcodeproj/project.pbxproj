@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AFAB54002ADD57500035715D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F735B5CA2AD932B3003DE38F /* GdeckSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdeckSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F735B5CC2AD932B3003DE38F /* GdeckSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GdeckSwiftUIApp.swift; sourceTree = "<group>"; };
 		F735B5CE2AD932B3003DE38F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 		F735B5CB2AD932B3003DE38F /* GdeckSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				AFAB54002ADD57500035715D /* Info.plist */,
 				F735B5CC2AD932B3003DE38F /* GdeckSwiftUIApp.swift */,
 				F735B5CE2AD932B3003DE38F /* ContentView.swift */,
 				F735B5D02AD932BA003DE38F /* Assets.xcassets */,
@@ -516,6 +518,8 @@
 				DEVELOPMENT_TEAM = QQAZR43YM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GdeckSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Control Apple Music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -546,6 +550,8 @@
 				DEVELOPMENT_TEAM = QQAZR43YM7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GdeckSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Control Apple Music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -575,6 +581,7 @@
 				DEVELOPMENT_TEAM = QQAZR43YM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GdeckUIKit/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Control Apple Music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -604,6 +611,7 @@
 				DEVELOPMENT_TEAM = QQAZR43YM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GdeckUIKit/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Control Apple Music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -633,6 +641,7 @@
 				DEVELOPMENT_TEAM = QQAZR43YM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GdeckObjC/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Control Apple Music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -661,6 +670,7 @@
 				DEVELOPMENT_TEAM = QQAZR43YM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GdeckObjC/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Control Apple Music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

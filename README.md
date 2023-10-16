@@ -152,6 +152,8 @@ GesturedeckMedia is a specialized implementation built on top of Gesturedeck, ta
 
 You can initialize GesturedeckMedia without any arguments and have **start/stop**, **skip next/previous** and **volume up/down** work out of the box. Note that due to iOS limitations, skip next/previous only works for the system media player.
 
+When using the default gesture actions you need to add the `NSAppleMusicUsageDescription` key in your project's `Info` tab with a value explaining why you need this permission (e.g. `"Control music playback"`).
+
 ### Getting Started with GesturedeckMedia
 
 To use GesturedeckMedia for showing media controls UI, follow these steps:
