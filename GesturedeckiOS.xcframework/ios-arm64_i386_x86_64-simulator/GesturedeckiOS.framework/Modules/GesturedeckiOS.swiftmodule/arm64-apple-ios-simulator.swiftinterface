@@ -52,7 +52,27 @@ extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
   @objc deinit
 }
 @objc @_Concurrency.MainActor(unsafe) public class GesturedeckMedia : GesturedeckiOS.Gesturedeck {
-  @objc @_Concurrency.MainActor(unsafe) public var gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay
+  @objc @_Concurrency.MainActor(unsafe) public var gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay?
+  @objc override public var tapAction: (() -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc override public var swipeLeftAction: (() -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc override public var swipeRightAction: (() -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc override public var panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc override public var longPressAction: ((_ gestureRecognizer: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
   @objc @_Concurrency.MainActor(unsafe) public init(on: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = {
             let audioSession = AVAudioSession.sharedInstance()
             if MPMusicPlayerController.systemMusicPlayer.playbackState == .playing {
@@ -74,7 +94,7 @@ extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
             if MPMusicPlayerController.systemMusicPlayer.playbackState == .playing {
                 MPMusicPlayerController.systemMusicPlayer.skipToNextItem()
             }
-        }, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = nil, panSensitivity: GesturedeckiOS.PanSensitivity = .medium, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = nil, autoStart: Swift.Bool = true, gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay? = nil, activationKey: Swift.String? = nil)
+        }, panAction: ((_ gestureRecognizer: UIKit.UIPanGestureRecognizer) -> Swift.Void)? = { _ in }, panSensitivity: GesturedeckiOS.PanSensitivity = .medium, longPressAction: ((_ sender: UIKit.UILongPressGestureRecognizer) -> Swift.Void)? = { _ in }, autoStart: Swift.Bool = true, gesturedeckMediaOverlay: GesturedeckiOS.GesturedeckMediaOverlay? = GesturedeckMediaOverlay(), activationKey: Swift.String? = nil)
   @objc convenience dynamic public init()
   @objc override public func start()
   @objc override public func stop()

@@ -285,26 +285,31 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
 /// The overlay view that displays media-related gestures.
-@property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
+@property (nonatomic, strong) GesturedeckMediaOverlay * _Nullable gesturedeckMediaOverlay;
+@property (nonatomic, copy) void (^ _Nullable tapAction)(void);
+@property (nonatomic, copy) void (^ _Nullable swipeLeftAction)(void);
+@property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
+@property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
 /// Initializes a new instance of GesturedeckMedia.
 /// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
 /// \param on The view controller on which to add the gesture recognizer. Defaults to <code>nil</code>.
 ///
-/// \param tapAction The action to perform when the user taps the screen. Defaults to <code>nil</code>.
+/// \param tapAction The action to perform when the user taps the screen. Defaults to play/pause. Set to <code>nil</code> to disable.
 ///
-/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to <code>nil</code>.
+/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to skip previous. Set to <code>nil</code> to disable.
 ///
-/// \param swipeRightAction The action to perform when the user swipes right. Defaults to <code>nil</code>.
+/// \param swipeRightAction The action to perform when the user swipes right. Defaults to skip next. Set to <code>nil</code> to disable.
 ///
-/// \param panAction The action to perform when the user pans the screen. Defaults to <code>nil</code>.
+/// \param panAction The action to perform when the user pans the screen. Defaults to volume change. Set to <code>nil</code> to disable.
 ///
 /// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
+/// \param longPressAction The action to perform when the user long presses the screen. Defaults to showing the overlay. Set to <code>nil</code> to disable.
 ///
 /// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
-/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. If you pass nil then the default GesturedeckMediaOverlay is used. Defaults to <code>nil</code>.
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. Defaults to standard GesturedeckMediaOverlay. When using an activation key, can be set  to <code>nil</code> to not appear.
 ///
 /// \param activationKey An optional activation key to remove watermarks. If not provided, Gesturedeck will present a watermark. Defaults to <code>nil</code>.
 ///
@@ -325,7 +330,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 /// A struct that represents the media overlay for Gesturedeck.
 SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
-/// The tint color of the media overlay.
+/// The color used to tint the overlay elements. Has effect only when an activation key is set.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
 /// The background color of the media overlay
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
@@ -667,26 +672,31 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
 /// The overlay view that displays media-related gestures.
-@property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
+@property (nonatomic, strong) GesturedeckMediaOverlay * _Nullable gesturedeckMediaOverlay;
+@property (nonatomic, copy) void (^ _Nullable tapAction)(void);
+@property (nonatomic, copy) void (^ _Nullable swipeLeftAction)(void);
+@property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
+@property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
 /// Initializes a new instance of GesturedeckMedia.
 /// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
 /// \param on The view controller on which to add the gesture recognizer. Defaults to <code>nil</code>.
 ///
-/// \param tapAction The action to perform when the user taps the screen. Defaults to <code>nil</code>.
+/// \param tapAction The action to perform when the user taps the screen. Defaults to play/pause. Set to <code>nil</code> to disable.
 ///
-/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to <code>nil</code>.
+/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to skip previous. Set to <code>nil</code> to disable.
 ///
-/// \param swipeRightAction The action to perform when the user swipes right. Defaults to <code>nil</code>.
+/// \param swipeRightAction The action to perform when the user swipes right. Defaults to skip next. Set to <code>nil</code> to disable.
 ///
-/// \param panAction The action to perform when the user pans the screen. Defaults to <code>nil</code>.
+/// \param panAction The action to perform when the user pans the screen. Defaults to volume change. Set to <code>nil</code> to disable.
 ///
 /// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
+/// \param longPressAction The action to perform when the user long presses the screen. Defaults to showing the overlay. Set to <code>nil</code> to disable.
 ///
 /// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
-/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. If you pass nil then the default GesturedeckMediaOverlay is used. Defaults to <code>nil</code>.
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. Defaults to standard GesturedeckMediaOverlay. When using an activation key, can be set  to <code>nil</code> to not appear.
 ///
 /// \param activationKey An optional activation key to remove watermarks. If not provided, Gesturedeck will present a watermark. Defaults to <code>nil</code>.
 ///
@@ -707,7 +717,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 /// A struct that represents the media overlay for Gesturedeck.
 SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
-/// The tint color of the media overlay.
+/// The color used to tint the overlay elements. Has effect only when an activation key is set.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
 /// The background color of the media overlay
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
@@ -1049,26 +1059,31 @@ SWIFT_CLASS("_TtC14GesturedeckiOS11Gesturedeck")
 SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 @interface GesturedeckMedia : Gesturedeck
 /// The overlay view that displays media-related gestures.
-@property (nonatomic, strong) GesturedeckMediaOverlay * _Nonnull gesturedeckMediaOverlay;
+@property (nonatomic, strong) GesturedeckMediaOverlay * _Nullable gesturedeckMediaOverlay;
+@property (nonatomic, copy) void (^ _Nullable tapAction)(void);
+@property (nonatomic, copy) void (^ _Nullable swipeLeftAction)(void);
+@property (nonatomic, copy) void (^ _Nullable swipeRightAction)(void);
+@property (nonatomic, copy) void (^ _Nullable panAction)(UIPanGestureRecognizer * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable longPressAction)(UILongPressGestureRecognizer * _Nonnull);
 /// Initializes a new instance of GesturedeckMedia.
 /// You can initialize GesturedeckMedia without any arguments and have start/stop, skip next/previous and volume up/down work out of the box.
 /// \param on The view controller on which to add the gesture recognizer. Defaults to <code>nil</code>.
 ///
-/// \param tapAction The action to perform when the user taps the screen. Defaults to <code>nil</code>.
+/// \param tapAction The action to perform when the user taps the screen. Defaults to play/pause. Set to <code>nil</code> to disable.
 ///
-/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to <code>nil</code>.
+/// \param swipeLeftAction The action to perform when the user swipes left. Defaults to skip previous. Set to <code>nil</code> to disable.
 ///
-/// \param swipeRightAction The action to perform when the user swipes right. Defaults to <code>nil</code>.
+/// \param swipeRightAction The action to perform when the user swipes right. Defaults to skip next. Set to <code>nil</code> to disable.
 ///
-/// \param panAction The action to perform when the user pans the screen. Defaults to <code>nil</code>.
+/// \param panAction The action to perform when the user pans the screen. Defaults to volume change. Set to <code>nil</code> to disable.
 ///
 /// \param panSensitivity The sensitivity of the pan gestures. Defaults to <code>.medium</code>.
 ///
-/// \param longPressAction The action to perform when the user long presses the screen. Defaults to <code>nil</code>.
+/// \param longPressAction The action to perform when the user long presses the screen. Defaults to showing the overlay. Set to <code>nil</code> to disable.
 ///
 /// \param autoStart A boolean indicating whether to automatically start recognizing gestures after initialization. Defaults to <code>true</code>.
 ///
-/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. If you pass nil then the default GesturedeckMediaOverlay is used. Defaults to <code>nil</code>.
+/// \param gesturedeckMediaOverlay The overlay view that displays media-related gestures. Defaults to standard GesturedeckMediaOverlay. When using an activation key, can be set  to <code>nil</code> to not appear.
 ///
 /// \param activationKey An optional activation key to remove watermarks. If not provided, Gesturedeck will present a watermark. Defaults to <code>nil</code>.
 ///
@@ -1089,7 +1104,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 /// A struct that represents the media overlay for Gesturedeck.
 SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
-/// The tint color of the media overlay.
+/// The color used to tint the overlay elements. Has effect only when an activation key is set.
 @property (nonatomic, strong) UIColor * _Nullable tintColor;
 /// The background color of the media overlay
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
