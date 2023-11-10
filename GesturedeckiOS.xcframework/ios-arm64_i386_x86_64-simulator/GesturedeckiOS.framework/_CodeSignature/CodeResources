@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		+SmLD4bg7msmR7hthQYshgyg0WY=
+		GrApNwmv5Nen3gGBXi1SPADeMDw=
 		</data>
 		<key>GestureViewController.nib/objects-11.0+.nib</key>
 		<data>
-		aZzagI6bDxaiOTf8P5WnSYYgTdU=
+		jCBWQ2iMTEFMUBiLLoJ3MUYb9HU=
 		</data>
 		<key>GestureViewController.nib/runtime.nib</key>
 		<data>
-		m3g/cRn0OWAMgmwquEiUGLx4tXY=
+		+Owq6ElAY84eZ5D5qJn8uhGnCLk=
 		</data>
 		<key>GestureViewControllerOverlay.nib/objects-11.0+.nib</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Headers/GesturedeckiOS-Swift.h</key>
 		<data>
-		PcJAdwFzfVfY4hNxxKtwlpPXJSQ=
+		0OhDxx9Kjkq1s/nhuGdwPC4Steo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aMT+AxjgegAexESe/uYPmBOJq/w=
+		qLkpEyr/ekh6nVrsuZZSD/8yI9M=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZWNXJJ4xpqhw/oZm/Ewqpkj5mco=
+		c9D0Wnv3jDdipN+i2xe6GRPJACY=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		chs3EVZHt7WWCvNM/VFeUEip4oU=
+		FCNf8y3sUY3zYVLgfxp0OF3FdyI=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sxFo0owiAz19HZ5m6qjQFmzFohY=
+		L2Hfrc2iDapS5FL22KFvoHhL9u4=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mIPsS6dsLwu9m1eujmm0I7rJuFs=
+		Q9uqOOut0ZLIYxm6xu8+a2tKdTA=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IRDaCBG2oe1WihoEO6U0tgwzSMQ=
+		AI/hYkZRLakiIJchH03w/dM/RZg=
 		</data>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5QfAHK1Ab7VG/kJYwDSXf3HHNG8=
+		5/zxCRQNh0a+uWugp/224In/fis=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,33 +83,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+SmLD4bg7msmR7hthQYshgyg0WY=
+			GrApNwmv5Nen3gGBXi1SPADeMDw=
 			</data>
 			<key>hash2</key>
 			<data>
-			mT2DV3OH98s4EeVUF00uiWEJDudpXIlRBKATX0nVa6c=
+			lrZJzgYDG1zCUEbil6QQGPWE/h4MPh5qLvv4WGJZqa8=
 			</data>
 		</dict>
 		<key>GestureViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aZzagI6bDxaiOTf8P5WnSYYgTdU=
+			jCBWQ2iMTEFMUBiLLoJ3MUYb9HU=
 			</data>
 			<key>hash2</key>
 			<data>
-			UKnUjnGgwuO2zHZpo9ienIiBh2WldmAEbkiq6thAQZ0=
+			Gxz/VT1dlODPkm81ATi7SKt2n9BvIcGNKLMb7D1sMKE=
 			</data>
 		</dict>
 		<key>GestureViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m3g/cRn0OWAMgmwquEiUGLx4tXY=
+			+Owq6ElAY84eZ5D5qJn8uhGnCLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			QggJivaLZr491YfqDxyA/nwBwKP0nZgImQXrRGLYixs=
+			3TfetXQTMM1ev5VdiIiB0rLuVvLcejtLXTW5lvFzasg=
 			</data>
 		</dict>
 		<key>GestureViewControllerOverlay.nib/objects-11.0+.nib</key>
@@ -149,11 +149,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PcJAdwFzfVfY4hNxxKtwlpPXJSQ=
+			0OhDxx9Kjkq1s/nhuGdwPC4Steo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ScTBB14BT1HhKU5dOi1scd6ShidsPODlj17RQJjWjZ0=
+			cEf3gxO+xQlMBd/nMUy4NhlbciI/M+R2EgI3CM7s6m4=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -171,22 +171,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZWNXJJ4xpqhw/oZm/Ewqpkj5mco=
+			c9D0Wnv3jDdipN+i2xe6GRPJACY=
 			</data>
 			<key>hash2</key>
 			<data>
-			IwMxZO8UoAHxp7TMzauAv/FX0XLood0w07idy1gVpFw=
+			hg9qiWvFQ3dw976hJSE+J9Vp2SYFl1TSmgPMp2i8k0U=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			chs3EVZHt7WWCvNM/VFeUEip4oU=
+			FCNf8y3sUY3zYVLgfxp0OF3FdyI=
 			</data>
 			<key>hash2</key>
 			<data>
-			heovHWa7Kyi/i7AiNdfp5f309l3amPt0OkK/Aw6vOYc=
+			rOBgvoKqsf8kg/RIk2xvIx9j2rTQW5SoWx2+n/1uNlQ=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -204,22 +204,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sxFo0owiAz19HZ5m6qjQFmzFohY=
+			L2Hfrc2iDapS5FL22KFvoHhL9u4=
 			</data>
 			<key>hash2</key>
 			<data>
-			JVZz3szmxXrB52uKYLQ71keF0oy4ZexzljVQ9xud/RY=
+			3nUHYLHHxzldrOZC6wmGON6Bno3+iLg7caNsvm+GZys=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mIPsS6dsLwu9m1eujmm0I7rJuFs=
+			Q9uqOOut0ZLIYxm6xu8+a2tKdTA=
 			</data>
 			<key>hash2</key>
 			<data>
-			QW7oBWIUXDipi4z9bYmrhr8XeDXk8j51SsJtoASJgtg=
+			47AaRvwPv1av16KRLQCD6eMgl295kP4FoVPGtJw5G6w=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -237,22 +237,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IRDaCBG2oe1WihoEO6U0tgwzSMQ=
+			AI/hYkZRLakiIJchH03w/dM/RZg=
 			</data>
 			<key>hash2</key>
 			<data>
-			D0pyHzFtTif2CtrP1Fysr8b26AkESaMBArv3OpOezGM=
+			fSztNC4LhYSUI3/DCSaqCm+dzlu2+LF6lCE/kaUJ554=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5QfAHK1Ab7VG/kJYwDSXf3HHNG8=
+			5/zxCRQNh0a+uWugp/224In/fis=
 			</data>
 			<key>hash2</key>
 			<data>
-			7Hax716pw7RrZtJqVeVgvEqUIR52zhq3EWj1q300FX8=
+			gWsN3N2a9YfIITRxHaLL16RM6pzE1KomNa1jYjTBPKU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

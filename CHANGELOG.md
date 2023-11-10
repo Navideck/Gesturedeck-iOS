@@ -1,3 +1,9 @@
+## 1.6.0
+* Improved contrast through automatic adjustment of the overlay background color to match the tint color
+* Allow disabling GesturedeckMediaOverlay when using activation key
+* Improve GesturedeckMediaOverlay API
+* New volume icon style
+
 ## 1.5.0
 * Show logo in watermark
 * Allow disabling specific gestures in GesturedeckMedia

@@ -331,7 +331,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
 /// The color used to tint the overlay elements. Has effect only when an activation key is set.
-@property (nonatomic, strong) UIColor * _Nullable tintColor;
+@property (nonatomic, strong) UIColor * _Nonnull tintColor;
 /// The background color of the media overlay
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The top icon of the media overlay.
@@ -718,7 +718,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
 /// The color used to tint the overlay elements. Has effect only when an activation key is set.
-@property (nonatomic, strong) UIColor * _Nullable tintColor;
+@property (nonatomic, strong) UIColor * _Nonnull tintColor;
 /// The background color of the media overlay
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The top icon of the media overlay.
@@ -1105,7 +1105,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
 /// The color used to tint the overlay elements. Has effect only when an activation key is set.
-@property (nonatomic, strong) UIColor * _Nullable tintColor;
+@property (nonatomic, strong) UIColor * _Nonnull tintColor;
 /// The background color of the media overlay
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The top icon of the media overlay.
@@ -1492,7 +1492,7 @@ SWIFT_CLASS("_TtC14GesturedeckiOS16GesturedeckMedia")
 SWIFT_CLASS("_TtC14GesturedeckiOS23GesturedeckMediaOverlay")
 @interface GesturedeckMediaOverlay : NSObject
 /// The color used to tint the overlay elements. Has effect only when an activation key is set.
-@property (nonatomic, strong) UIColor * _Nullable tintColor;
+@property (nonatomic, strong) UIColor * _Nonnull tintColor;
 /// The background color of the media overlay
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
 /// The top icon of the media overlay.
