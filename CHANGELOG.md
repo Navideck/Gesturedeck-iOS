@@ -1,3 +1,6 @@
+## 1.6.1
+* Fix skip icons
+
 ## 1.6.0
 * Improved contrast through automatic adjustment of the overlay background color to match the tint color
 * Allow disabling GesturedeckMediaOverlay when using activation key
