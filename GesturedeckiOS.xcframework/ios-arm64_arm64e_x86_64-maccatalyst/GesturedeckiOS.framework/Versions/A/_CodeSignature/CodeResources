@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		68sKWZUePoDmDFbXQEHDuesUFFQ=
+		k41vRtb6Y1KNhzZZBS1c+tdhZEo=
 		</data>
 		<key>Resources/GestureViewController.nib</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		eTdpGUU1m+zdz8vyYl48yVpDahk=
+		QZroIdToVUVTqCILOZiXCARhHsw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -48,14 +48,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ou/kBZIt6fjELpbVU8eVRPiPwR8ByUx5FwYoHs1CgGE=
+			ss4jEmiwtIEDu8AfaE+OY7vUBg9zBicuqCkzgqE1tH8=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YlOm7dBcp2Z64tOeBtZEQFNLKKMxI/08Sj7yestlJKI=
+			uR0ie8+9ukBUgKdT02kQXzamY2lPanyacsFNWuI0wYg=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios-macabi.swiftdoc</key>
@@ -69,14 +69,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pY3CSNjl8Cj5GnGD0sCXg+ODE7dd/N46Hr9/FZQAu1E=
+			rMktc83ZtTKpxXeULrZ9GHvjj8vpgMaOvUn95uwwIC0=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/arm64e-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IegNLHXsDEVKSMjJpMNZVlnC0n9+Ut4snwGQiEwN7gg=
+			niD2aX05h+//i4q4eZBjtMQREB6qlhI5LNZdiZHq06k=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -90,14 +90,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V79PETxDvnc7coTDl67N0qkaho6QFzggkiSeONTBbEs=
+			aFMEclHPNrt7U6kXKWFtRgbxyhyKyvgxlZQbYzgKJ5I=
 			</data>
 		</dict>
 		<key>Modules/GesturedeckiOS.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WgnDm7USxG0QzfZ/6kMxlH+alRND9Iyg4z/UDtqbJl4=
+			H13ZOv0GKOp5FsVfwUiORBsQlUuaAs9bzyW9/zzDM5g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x02Xkr++unbIWNv296smHTq8UbHR1KcSxv87mBfnshA=
+			SY4dO6mYs8wgL9EuZO1WbR3iWAxWeQJruJSSHumDiU4=
 			</data>
 		</dict>
 		<key>Resources/GestureViewController.nib</key>
@@ -132,7 +132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZQOyu9c6AvvR9Xzti8bQLXqLEpk5f2vcmjDsPXOCspA=
+			Dx78TPu6JOT5z5C1c488b8GfPTx1LLFKf020pZBruUc=
 			</data>
 		</dict>
 	</dict>

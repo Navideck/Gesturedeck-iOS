@@ -1,3 +1,6 @@
+## 1.6.2
+* Remove Bitcode support
+
 ## 1.6.1
 * Fix skip icons
 

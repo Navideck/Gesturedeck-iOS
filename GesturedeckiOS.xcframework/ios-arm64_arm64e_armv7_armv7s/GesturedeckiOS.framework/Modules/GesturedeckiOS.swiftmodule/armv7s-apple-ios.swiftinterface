@@ -75,6 +75,10 @@ extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
     @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) public init(on: UIKit.UIViewController? = nil, tapAction: (() -> Swift.Void)? = {
+            guard Bundle.main.infoDictionary?["NSAppleMusicUsageDescription"] != nil else {
+                print("NSAppleMusicUsageDescription key not present")
+                return
+            }
             let audioSession = AVAudioSession.sharedInstance()
             if MPMusicPlayerController.systemMusicPlayer.playbackState == .playing {
                 MPMusicPlayerController.systemMusicPlayer.pause()
@@ -88,10 +92,18 @@ extension GesturedeckiOS.Gesturedeck : UIKit.UIGestureRecognizerDelegate {
                 try? audioSession.setActive(false, options: .notifyOthersOnDeactivation)
             }
         }, swipeLeftAction: (() -> Swift.Void)? = {
+            guard Bundle.main.infoDictionary?["NSAppleMusicUsageDescription"] != nil else {
+                print("NSAppleMusicUsageDescription key not present")
+                return
+            }
             if MPMusicPlayerController.systemMusicPlayer.playbackState == .playing {
                 MPMusicPlayerController.systemMusicPlayer.skipToPreviousItem()
             }
         }, swipeRightAction: (() -> Swift.Void)? = {
+            guard Bundle.main.infoDictionary?["NSAppleMusicUsageDescription"] != nil else {
+                print("NSAppleMusicUsageDescription key not present")
+                return
+            }
             if MPMusicPlayerController.systemMusicPlayer.playbackState == .playing {
                 MPMusicPlayerController.systemMusicPlayer.skipToNextItem()
             }
